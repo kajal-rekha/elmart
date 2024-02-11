@@ -1,0 +1,297 @@
+@media (min-width: 1499px) {
+  .navbar {
+    height: 100px;
+  }
+}
+@media (min-width: 998px) {
+  .navbar {
+    height: 100px;
+  }
+}
+
+@media (max-width: 1279px) {
+  .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper-content p {
+    font-size: 50px;
+    width: 100%;
+  }
+  .swiper-button-prev {
+    margin-left: 16px !important;
+  }
+}
+
+@media (max-width: 1227px) {
+  .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper-content p {
+    font-size: 50px;
+    width: 100%;
+  }
+}
+@media (min-width: 1000px) {
+  .search-modal-content {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 50%;
+  }
+  .swiper-content p {
+    font-size: 50px;
+    width: 100%;
+  }
+
+  .cart-modal.active {
+    display: block;
+    transform: translateX(-9%);
+  }
+}
+
+@media (min-width: 991) {
+  .navbar {
+    min-height: 100vh;
+  }
+}
+
+@media (max-width: 973px) {
+  .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper-content p {
+    font-size: 50px;
+    width: 100%;
+  }
+  .result .search-view {
+    padding: 0px 8px;
+  }
+  .search-details {
+    margin-top: 7px;
+  }
+
+  .search-modal-content {
+    gap: 18px;
+  }
+}
+@media (max-width: 859px) {
+  .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper-content p {
+    font-size: 48px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top-header {
+    height: 42px;
+  }
+  .modal-wrapper {
+    margin-top: 20%;
+  }
+
+  .modal-wrapper .save {
+    font-size: 40px;
+    margin-top: 5px;
+  }
+
+  .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper-content p {
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .swiper-button-prev {
+    margin-left: 12px !important;
+  }
+
+  .cart-modal.active {
+    display: block;
+    transform: translateX(-7%);
+  }
+
+  .search-modal-content .search-title,
+  .search-price {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .modal-wrapper .save {
+    font-size: 30px;
+  }
+  .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 55%;
+  }
+
+  .swiper-content p {
+    font-size: 50px;
+    width: 100%;
+  }
+  .cart-modal.active {
+    display: block;
+    transform: translateX(-6%);
+  }
+
+  .search-modal {
+    width: 100%;
+    margin-left: 4%;
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .search-details {
+    width: 60%;
+  }
+  .search-img {
+    width: 100px;
+    height: 120px;
+  }
+
+  .item-cross {
+    font-size: 10px;
+    margin-top: -150px;
+    padding: 5px 14px;
+  }
+  .search-modal-wrapper {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 474px) {
+  .top-header .social-icons {
+    display: none;
+  }
+  .modal-wrapper p {
+    width: 100%;
+  }
+
+  .cart-modal {
+    width: 100vw;
+  }
+  .cart-modal.active {
+    transform: translateX(-2%);
+  }
+  .cart-btn h3 {
+    font-size: 20px;
+  }
+  .modal-content {
+    padding: 14px;
+  }
+
+  .cart-items {
+    gap: 10px;
+  }
+
+  .cart-item {
+    gap: 7px;
+  }
+
+  .qunt {
+    margin-left: 45px;
+  }
+  .qunt-btn button {
+    padding: 4px 10px;
+  }
+
+  .search-details {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 423px) {
+  .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 52%;
+  }
+
+  .swiper-content p {
+    font-size: 45px;
+    width: 100%;
+  }
+
+  .qunt {
+    margin-left: 30px;
+  }
+  .search-details {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .language {
+    display: none;
+  }
+  .top-header-middle {
+    margin: 0 auto;
+  }
+  .modal-wrapper .save {
+    font-size: 25px;
+  }
+  .modal-wrapper p {
+    font-size: 20px;
+  }
+
+  .swiper-content p {
+    font-size: 40px;
+    width: 100%;
+  }
+
+  .qunt {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 353px) {
+  .swiper-content p {
+    font-size: 38px;
+    width: 100%;
+  }
+
+  .qunt-btn button {
+    padding: 3px 5px;
+  }
+}
+@media screen and (max-width: 282px) {
+  .swiper-content p {
+    font-size: 32px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 268px) {
+  .top-header-middle p {
+    display: none;
+  }
+  .modal-wrapper .save {
+    font-size: 22px;
+  }
+  .modal-wrapper p {
+    font-size: 16px;
+  }
+}

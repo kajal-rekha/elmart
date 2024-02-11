@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elmart</title>
+
+    <!--================= CSS  =============-->
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./assets/fontawsome/all.min.css" />
+    <link rel="stylesheet" href="./assets/fontawsome/fontawesome.min.css" />
+    <link rel="stylesheet" href="./css/swiper.css" />
+    <link rel="stylesheet" href="./css/slick.min.css" />
+    <link rel="stylesheet" href="./css/slick.theme.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <!--================ SCRIPT ==============-->
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <!--============ TOP HEADER START ============-->
+      <div class="top-header">
+        <div class="top-header-content container">
+          <div class="social-icons">
+            <span><i class="fab fa-facebook"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+          </div>
+
+          <div class="top-header-middle">
+            <p>Welcome to elmart</p>
+            <button class="top-header-btn" type="button">
+              more
+              <span><i class="fas fa-chevron-down"></i></span>
+            </button>
+          </div>
+
+          <div>
+            <ul class="language">
+              <li class="">
+                <a href="#">Language</a>
+                <span class="dropdown-icon"
+                  ><i class="fa-solid fa-circle-chevron-down"></i
+                ></span>
+                <ul class="language-list">
+                  <li><a href="#">English</a></li>
+                  <li><a href="#">Bangali</a></li>
+                  <li><a href="#">Hindi</a></li>
+                  <li><a href="#">Spanish</a></li>
+                  <li><a href="#">Russian</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!--=========== TOP HEADER MODAL  START==============-->
+
+      <div class="modal">
+        <div class="wrapper modal-wrapper">
+          <button class="cross-btn"><i class="fa-solid fa-xmark"></i></button>
+          <span>Special Deal</span>
+          <p class="save">Save up to 50%</p>
+          <p>
+            Explore exclusive offers on your favorite items. Limited stock
+            available. Don't miss out!
+          </p>
+          <button>Shop Now</button>
+        </div>
+      </div>
+      <!--=========== TOP HEADER MODAL END ==============-->
+
+      <!--============ NAVBAR START ============-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
+        <div class="container">
+          <a class="navbar-brand logo" href="#">El<span>mart</span></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Features
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Haircare</a></li>
+                  <li><a class="dropdown-item" href="#">Fragrance</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Makeup</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Skincare</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Accessories</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Shop
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">New Arrivals</a></li>
+                  <li><a class="dropdown-item" href="#">Gift Sets</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Best Sellers</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Sale Items</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Brands</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Products
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Foundation</a></li>
+                  <li><a class="dropdown-item" href="#">Lipstick</a></li>
+
+                  <li>
+                    <a class="dropdown-item" href="#">Moisturizer</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Shampoo</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Perfume</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="d-flex gap-3 nav-left">
+              <form class="d-flex search-form">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <span class="search-icon"
+                  ><i class="fa-solid fa-magnifying-glass"></i
+                ></span>
+              </form>
+
+              <div class="d-flex gap-3 login">
+                <button class="login-btn">Login</button>
+
+                <div class="cart">
+                  <span class="cart-icon"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></span>
+                  <span class="cart-num">6</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!--============ CART MODAL ==================-->
+
+      <div class="cart-modal" id="cartModal">
+        <div class="modal-content">
+          <div class="cart-btn">
+            <h3>Shopping Cart</h3>
+            <span class="cross-btn2"><i class="fas fa-times"></i></span>
+          </div>
+          <hr />
+          <div class="cart-scroll">
+            <div class="cart-items">
+              <div class="cart-item">
+                <div class="cart-img">
+                  <img
+                    src="https://images.pexels.com/photos/1749452/pexels-photo-1749452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="cart image"
+                  />
+                </div>
+
+                <div class="cart-detail">
+                  <div>
+                    <h3>lipstics</h3>
+
+                    <p class="price">Price:$20</p>
+                    <p class="remove">Remove</p>
+                  </div>
+
+                  <div class="qunt">
+                    <p>Cart quentity</p>
+                    <div class="qunt-btn">
+                      <button>+</button>
+                      <button>5</button>
+                      <button>-</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <hr />
+              <div class="cart-item">
+                <div class="cart-img">
+                  <img
+                        src="https://images.pexels.com/photos/1722868/pexels-photo-1722868.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="cart image"
+                  />
+                </div>
+
+                <div class="cart-detail">
+                  <div>
+                    <h3>lipstics</h3>
+
+                    <p class="price">Price:$20</p>
+                    <p class="remove">Remove</p>
+                  </div>
+
+                  <div class="qunt">
+                    <p>Cart quentity</p>
+                    <div class="qunt-btn">
+                      <button>+</button>
+                      <button>5</button>
+                      <button>-</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="cart-item">
+                <div class="cart-img">
+                 <img
+                        src="https://images.pexels.com/photos/2688991/pexels-photo-2688991.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="cart image"
+                  />
+                </div>
+
+                <div class="cart-detail">
+                  <div>
+                    <h3>lipstics</h3>
+
+                    <p class="price">Price:$20</p>
+                    <p class="remove">Remove</p>
+                  </div>
+
+                  <div class="qunt">
+                    <p>Cart quentity</p>
+                    <div class="qunt-btn">
+                      <button>+</button>
+                      <button>5</button>
+                      <button>-</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="cart-item">
+                <div class="cart-img">
+                  <img
+                        src="https://images.pexels.com/photos/2587370/pexels-photo-2587370.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="cart image"
+                  />
+                </div>
+
+                <div class="cart-detail">
+                  <div>
+                    <h3>lipstics</h3>
+
+                    <p class="price">Price:$20</p>
+                    <p class="remove">Remove</p>
+                  </div>
+
+                  <div class="qunt">
+                    <p>Cart quentity</p>
+                    <div class="qunt-btn">
+                      <button>+</button>
+                      <button>5</button>
+                      <button>-</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+              <div class="cart-item">
+                <div class="cart-img">
+                 <img
+                        src="https://images.pexels.com/photos/3762663/pexels-photo-3762663.jpeg?auto=compress&cs=tinysrgb&w=600"
+                        alt="cart image"
+                  />
+                </div>
+
+                <div class="cart-detail">
+                  <div>
+                    <h3>lipstics</h3>
+
+                    <p class="price">Price:$20</p>
+                    <p class="remove">Remove</p>
+                  </div>
+
+                  <div class="qunt">
+                    <p>Cart quentity</p>
+                    <div class="qunt-btn">
+                      <button>+</button>
+                      <button>5</button>
+                      <button>-</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <hr />
+              <div class="cart-item">
+                <div class="cart-img">
+                  <img
+                    src="https://images.pexels.com/photos/1749452/pexels-photo-1749452.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="cart image"
+                  />
+                </div>
+
+                <div class="cart-detail">
+                  <div>
+                    <h3>lipstics</h3>
+
+                    <p class="price">Price:$20</p>
+                    <p class="remove">Remove</p>
+                  </div>
+
+                  <div class="qunt">
+                    <p>Cart quentity</p>
+                    <div class="qunt-btn">
+                      <button>+</button>
+                      <button>5</button>
+                      <button>-</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+            </div>
+          </div>
+
+          <div class="cart-bottom">
+            <div class="total">
+              <p>Subtotal</p>
+              <p>$5000</p>
+            </div>
+            <div class="chc-btn">
+              <button>clear cart</button>
+              <button>checkout</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--==================== SEARCH MODAL =======================-->
+
+      <div class="search-modal container">
+        <div class="search-modal-container search-wrapper">
+          <button id="closeModal" class="search-modal-cross">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+          <form class="d-flex search-form">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder=" Search "
+              aria-label="Search"
+            />
+            <span class="search-icon"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></span>
+          </form>
+
+          <div class="result">
+            <p>6 Result Found</p>
+            <button type="button" class="search-view">View All</button>
+          </div>
+
+          <div class="search-modal-wrapper">
+            <div class="search-modal-content">
+              <div class="search-img">
+                <img
+                  src="https://images.pexels.com/photos/3387577/pexels-photo-3387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="search modal image"
+                />
+              </div>
+
+              <div class="search-details">
+                <div class="search-star">
+                  <span class="star"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span class="review">10+ Review</span>
+                </div>
+                <div>
+                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
+                  <p class="search-price">
+                    <span class="">Price:</span>
+                    $250
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="item-cross">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="search-modal-wrapper">
+            <div class="search-modal-content">
+              <div class="search-img">
+               <img
+                    src="https://images.pexels.com/photos/9849311/pexels-photo-9849311.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="search modal image"
+                />
+              </div>
+
+              <div class="search-details">
+                <div class="search-star">
+                  <span class="star"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span class="review">10+ Review</span>
+                </div>
+                <div>
+                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
+                  <p class="search-price">
+                    <span class="">Price:</span>
+                    $250
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="search-modal-cross item-cross">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="search-modal-wrapper">
+            <div class="search-modal-content">
+              <div class="search-img">
+                <img
+                    src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="search modal image"
+                />
+              </div>
+
+              <div class="search-details">
+                <div class="search-star">
+                  <span class="star"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span class="review">10+ Review</span>
+                </div>
+                <div>
+                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
+                  <p class="search-price">
+                    <span class="">Price:</span>
+                    $250
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="search-modal-cross item-cross">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="search-modal-wrapper">
+            <div class="search-modal-content">
+              <div class="search-img">
+                 <img
+                    src="https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="search modal image"
+                />
+              </div>
+
+              <div class="search-details">
+                <div class="search-star">
+                  <span class="star"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span class="review">10+ Review</span>
+                </div>
+                <div>
+                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
+                  <p class="search-price">
+                    <span class="">Price:</span>
+                    $250
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="search-modal-cross item-cross">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="search-modal-wrapper">
+            <div class="search-modal-content">
+              <div class="search-img">
+                <img
+                    src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="search modal image"
+                />
+              </div>
+
+              <div class="search-details">
+                <div class="search-star">
+                  <span class="star"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span class="review">10+ Review</span>
+                </div>
+                <div>
+                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
+                  <p class="search-price">
+                    <span class="">Price:</span>
+                    $250
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="search-modal-cross item-cross">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="search-modal-wrapper">
+            <div class="search-modal-content">
+              <div class="search-img">
+                <img
+                  src="https://images.pexels.com/photos/3387577/pexels-photo-3387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="search modal image"
+                />
+              </div>
+
+              <div class="search-details">
+                <div class="search-star">
+                  <span class="star"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span class="review">10+ Review</span>
+                </div>
+                <div>
+                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
+                  <p class="search-price">
+                    <span class="">Price:</span>
+                    $250
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="search-modal-cross item-cross">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--=============== HERO SECTION START =======================-->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <!-- slider-1 -->
+        <div class="swiper-slide">
+          <img
+            src="https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="slider"
+          />
+          <div class="swiper-content">
+            <p>Discover Your Radiant Beauty</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+
+        <!-- slider-2 -->
+        <div class="swiper-slide">
+          <img
+            src="https://images.pexels.com/photos/7670737/pexels-photo-7670737.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="slider"
+          />
+          <div class="swiper-content">
+            <p>Revitalize Your Beauty Routine</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+
+        <!-- slider-3 -->
+        <div class="swiper-slide">
+          <img
+            src="https://images.pexels.com/photos/2633987/pexels-photo-2633987.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="slider"
+          />
+
+          <div class="swiper-content">
+            <p>Unleash Your Inner Glow</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+
+        <!-- slider-4 -->
+        <div class="swiper-slide">
+          <img
+            src="https://images.pexels.com/photos/1653085/pexels-photo-1653085.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="slider"
+          />
+          <div class="swiper-content">
+            <p>Chic Beauty Essentials Await</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+
+        <!-- slider-5 -->
+        <div class="swiper-slide">
+          <img
+            src="https://images.pexels.com/photos/7256151/pexels-photo-7256151.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="slider"
+          />
+          <div class="swiper-content">
+            <p>Unleash Your Inner Radiance</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+        <!-- slider-6 -->
+        <div class="swiper-slide">
+          <img
+            src="https://images.pexels.com/photos/7615876/pexels-photo-7615876.jpeg?auto=compress&cs=tinysrgb&w=600"
+            alt="slider"
+          />
+          <div class="swiper-content">
+            <p>Crafted Every Skin Tone</p>
+            <button>Shop Now</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <!--=============== HERO SECTION END =======================-->
+    <!--============ BANNER ==================-->
+    <div class="slick-slider-wrapper">
+      <div class="slick-slider container">
+        <div class="row slider">
+          <div class="col-md-12">
+            <div class="banner-img">
+              <img
+                src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1707386272/logo_balparmak_11-256x256_tsq2kq.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="banner-img">
+              <img
+                src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1707387142/ckznras03006xoifnxf4b9zw9-iba-cosmetics-logo.full_o8tood.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="banner-img">
+              <img
+                src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1707386268/small_t2bpah.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="banner-img">
+              <img
+                src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1707367433/pngtree-diamond-jewellery-logo-design-vector-template-png-image_5648770_l40me4.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="banner-img">
+              <img
+                src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1707387147/d4e5de0a80b43128e828_arkfsb.webp"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="banner-img">
+              <img
+                src="https://res.cloudinary.com/dh0ado2ir/image/upload/v1707367427/441555_15036940_2742570_8104039b_image_o8gciz.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--============ SLICK SLIDER END ===============-->
+  </body>
+</html>
