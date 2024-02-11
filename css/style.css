@@ -381,7 +381,7 @@ nav .logo {
   padding: 3px;
   height: 80vh;
   margin-left: 20%;
-  z-index: 995;
+  z-index: 2000;
   position: fixed;
   display: none;
   
@@ -534,6 +534,7 @@ nav .logo {
 .banner-img {
   width: 180px;
   height: 180px;
+  margin: 0 auto;
 }
 
 .banner-img img {
@@ -551,16 +552,16 @@ nav .logo {
 
 .slick-next:hover {
   background-color: black !important;
+  transition: 0.5s;
 }
 .slick-prev:hover {
   background-color: black !important;
+  transition: 0.5s;
 }
 .slick-prev {
   margin-left: -5px;
 }
-.slick-next {
-  margin-right: 30px;
-}
+
 
 .slick-next:before {
   content: "\203A" !important;
