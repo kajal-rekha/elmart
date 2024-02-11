@@ -12,6 +12,17 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 2%;
+  background-color: orangered;
+  border-radius: 50px;
+}
+
+
 ::selection {
   background-color: #5bbdff;
   color: black;
@@ -50,7 +61,7 @@ button {
   border-radius: 5px;
 }
 button:hover {
-  background-color: rgb(228, 72, 15);
+  background-color: #d43900;
   transition: 0.5s;
 }
 
