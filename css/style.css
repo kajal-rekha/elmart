@@ -254,6 +254,9 @@ nav .logo a {
 .nav .logo span {
   color: orangered;
 }
+.nav .logo a:hover {
+  color: black;
+}
 
 .nav-items {
   display: flex;
