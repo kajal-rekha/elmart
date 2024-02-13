@@ -1,3 +1,6 @@
+new WOW().init();
+
+//******************** */ swiper  **************************//
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
@@ -16,7 +19,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// slick-slider //
+//************** */ slick-slider **************** //
 $(".slider").slick({
   dots: true,
   infinite: true,
@@ -61,3 +64,27 @@ $(".slider").slick({
     },
   ],
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

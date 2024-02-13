@@ -13,8 +13,9 @@
     <link rel="stylesheet" href="./css/swiper.css" />
     <link rel="stylesheet" href="./css/slick.min.css" />
     <link rel="stylesheet" href="./css/slick.theme.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/animate.css" />
     <link rel="stylesheet" href="./css/responsive.css" />
+    <link rel="stylesheet" href="./css/style.css" />
 
     <!--================ SCRIPT ==============-->
     <script src="./js/bootstrap.js"></script>
@@ -22,6 +23,7 @@
     <script src="./js/jquery.js"></script>
     <script src="./js/swiper.js"></script>
     <script src="./js/slick.min.js"></script>
+    <script src="./js/wow.min.js"></script>
     <script src="./js/app.js" defer></script>
   </head>
 
@@ -29,15 +31,16 @@
     <header>
       <!--============ TOP HEADER START ============-->
       <div class="top-header">
-        <div class="top-header-content container">
-          <div class="social-icons">
+        <div class="top-header-content wrapper">
+          <div class="social-icons wow slideInLeft">
+            <span class="follow">Follow us: </span>
             <span><i class="fab fa-facebook"></i></span>
             <span><i class="fab fa-instagram"></i></span>
             <span><i class="fab fa-twitter"></i></span>
           </div>
 
-          <div class="top-header-middle">
-            <p>Welcome to elmart</p>
+          <div class="wow fadeInDown top-header-middle">
+            <p class="welcome">Welcome to elmart</p>
             <button class="top-header-btn" type="button">
               more
               <span><i class="fas fa-chevron-down"></i></span>
@@ -45,18 +48,18 @@
           </div>
 
           <div>
-            <ul class="language">
-              <li class="">
-                <a href="#">Language</a>
+            <ul class="wow slideInRight language">
+              <li>
+                <a href="#" class="lang">Language</a>
                 <span class="dropdown-icon"
-                  ><i class="fa-solid fa-circle-chevron-down"></i
+                  ><i class="fa-solid fa-caret-down"></i
                 ></span>
                 <ul class="language-list">
-                  <li><a href="#">English</a></li>
-                  <li><a href="#">Bangali</a></li>
-                  <li><a href="#">Hindi</a></li>
-                  <li><a href="#">Spanish</a></li>
-                  <li><a href="#">Russian</a></li>
+                  <li><a href="#" class="link-item">English</a></li>
+                  <li><a href="#" class="link-item">Bangali</a></li>
+                  <li><a href="#" class="link-item">Hindi</a></li>
+                  <li><a href="#" class="link-item">Spanish</a></li>
+                  <li><a href="#" class="link-item">Russian</a></li>
                 </ul>
               </li>
             </ul>
@@ -65,7 +68,7 @@
       </div>
       <!--=========== TOP HEADER MODAL  START==============-->
 
-      <div class="modal">
+      <div class="wow fadeInDown modal">
         <div class="wrapper modal-wrapper">
           <button class="cross-btn"><i class="fa-solid fa-xmark"></i></button>
           <span>Special Deal</span>
@@ -80,139 +83,106 @@
       <!--=========== TOP HEADER MODAL END ==============-->
 
       <!--============ NAVBAR START ============-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed">
-        <div class="container">
-          <a class="navbar-brand logo" href="#">El<span>mart</span></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <nav class="nav">
+        <div class="wrapper nav-items">
+          <div class="logo">
+            <a href="#">El<span>mart</span></a>
+          </div>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Features
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Haircare</a></li>
-                  <li><a class="dropdown-item" href="#">Fragrance</a></li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">Makeup</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Skincare</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Accessories</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Shop
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">New Arrivals</a></li>
-                  <li><a class="dropdown-item" href="#">Gift Sets</a></li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">Best Sellers</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Sale Items</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Brands</a>
-                  </li>
-                </ul>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Products
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Foundation</a></li>
-                  <li><a class="dropdown-item" href="#">Lipstick</a></li>
-
-                  <li>
-                    <a class="dropdown-item" href="#">Moisturizer</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Shampoo</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Perfume</a>
-                  </li>
-                </ul>
-              </li>
-            </ul>
-
-            <div class="d-flex gap-3 nav-left">
-              <form class="d-flex search-form">
-                <input
-                  class="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <span class="search-icon"
-                  ><i class="fa-solid fa-magnifying-glass"></i
-                ></span>
-              </form>
-
-              <div class="d-flex gap-3 login">
-                <button class="login-btn">Login</button>
-
-                <div class="cart">
-                  <span class="cart-icon"
-                    ><i class="fa-solid fa-cart-shopping"></i
-                  ></span>
-                  <span class="cart-num">6</span>
+          <div class="menu">
+            <ul class="link-items">
+              <li><a href="#home" class="active link-item">Home</a></li>
+              <li class="dropdown">
+                <a href="#page" class="link-item">Pages</a>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+                <div class="dropdown-items1">
+                  <ul class="dropdown-list">
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404 Error</a></li>
+                  </ul>
                 </div>
-              </div>
+              </li>
+              <li class="dropdown">
+                <a href="#shop" class="link-item">Shop</a>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+                <div class="dropdown-items2">
+                  <ul class="dropdown-list">
+                    <li class="drop-heading">
+                      <a href="#" class="link-item">Shop Layout</a>
+                    </li>
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404 Error</a></li>
+                  </ul>
+
+                  <ul class="dropdown-list">
+                    <li class="drop-heading">
+                      <a href="#" class="link-item">Products List</a>
+                    </li>
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404 Error</a></li>
+                  </ul>
+
+                  <ul class="dropdown-list">
+                    <li class="drop-heading">
+                      <a href="#" class="link-item">Product Types</a>
+                    </li>
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404 Error</a></li>
+                  </ul>
+
+                  <ul class="dropdown-list">
+                    <li class="drop-heading">
+                      <a href="#" class="link-item">Brands</a>
+                    </li>
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404 Error</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#blog" class="link-item">Blog</a></li>
+              <li><a href="#contact" class="link-item">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="nav-left">
+            <span class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+
+            <div class="user">
+              <span class="user-icon"><i class="fa-solid fa-user"></i></span>
+            </div>
+            <div class="cart">
+              <span class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </span>
+              <span class="cart-num">10</span>
             </div>
           </div>
+
+          <!--========================= NAV-TOGGLE =========================-->
+          <button class="toggle-nav">
+            <i class="fas fa-bars"></i>
+          </button>
         </div>
       </nav>
 
       <!--============ CART MODAL ==================-->
-
       <div class="cart-modal" id="cartModal">
         <div class="modal-content">
           <div class="cart-btn">
@@ -246,42 +216,14 @@
                       <button>-</button>
                     </div>
                   </div>
-
                 </div>
               </div>
               <hr />
               <div class="cart-item">
                 <div class="cart-img">
                   <img
-                        src="https://images.pexels.com/photos/1722868/pexels-photo-1722868.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="cart image"
-                  />
-                </div>
-
-                <div class="cart-detail">
-                  <div>
-                    <h3>lipstics</h3>
-
-                    <p class="price">Price:$20</p>
-                    <p class="remove">Remove</p>
-                  </div>
-
-                  <div class="qunt">
-                    <p>Cart quentity</p>
-                    <div class="qunt-btn">
-                      <button>+</button>
-                      <button>5</button>
-                      <button>-</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <hr />
-              <div class="cart-item">
-                <div class="cart-img">
-                 <img
-                        src="https://images.pexels.com/photos/2688991/pexels-photo-2688991.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="cart image"
+                    src="https://images.pexels.com/photos/1722868/pexels-photo-1722868.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="cart image"
                   />
                 </div>
 
@@ -307,8 +249,35 @@
               <div class="cart-item">
                 <div class="cart-img">
                   <img
-                        src="https://images.pexels.com/photos/2587370/pexels-photo-2587370.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="cart image"
+                    src="https://images.pexels.com/photos/2688991/pexels-photo-2688991.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="cart image"
+                  />
+                </div>
+
+                <div class="cart-detail">
+                  <div>
+                    <h3>lipstics</h3>
+
+                    <p class="price">Price:$20</p>
+                    <p class="remove">Remove</p>
+                  </div>
+
+                  <div class="qunt">
+                    <p>Cart quentity</p>
+                    <div class="qunt-btn">
+                      <button>+</button>
+                      <button>5</button>
+                      <button>-</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr />
+              <div class="cart-item">
+                <div class="cart-img">
+                  <img
+                    src="https://images.pexels.com/photos/2587370/pexels-photo-2587370.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="cart image"
                   />
                 </div>
 
@@ -334,9 +303,9 @@
               <hr />
               <div class="cart-item">
                 <div class="cart-img">
-                 <img
-                        src="https://images.pexels.com/photos/3762663/pexels-photo-3762663.jpeg?auto=compress&cs=tinysrgb&w=600"
-                        alt="cart image"
+                  <img
+                    src="https://images.pexels.com/photos/3762663/pexels-photo-3762663.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="cart image"
                   />
                 </div>
 
@@ -403,20 +372,31 @@
         </div>
       </div>
 
+      <!--================== MOBILE NAV ========================-->
+      <div class="mobile-nav">
+        <ul class="mobile-menu">
+          <li><a href="#home" class="active link-item">Home</a></li>
+          <li class="dropdown">
+            <a href="#page" class="link-item">Page</a>
+          </li>
+          <li class="dropdown">
+            <a href="#shop" class="link-item">Shop</a>
+          </li>
+          <li><a href="#blog" class="link-item">Blog</a></li>
+          <li><a href="#about" class="link-item">About</a></li>
+          <li><a href="#contact" class="link-item">Contact</a></li>
+        </ul>
+      </div>
+
       <!--==================== SEARCH MODAL =======================-->
 
-      <div class="search-modal container">
-        <div class="search-modal-container search-wrapper">
+      <div class="search-modal wrapper">
+        <div class="search-modal-wrapper search-wrapper">
           <button id="closeModal" class="search-modal-cross">
             <i class="fa-solid fa-xmark"></i>
           </button>
-          <form class="d-flex search-form">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder=" Search "
-              aria-label="Search"
-            />
+          <form class="d-flex src-form">
+            <input type="search" placeholder=" Search " />
             <span class="search-icon"
               ><i class="fa-solid fa-magnifying-glass"></i
             ></span>
@@ -465,9 +445,9 @@
           <div class="search-modal-wrapper">
             <div class="search-modal-content">
               <div class="search-img">
-               <img
-                    src="https://images.pexels.com/photos/9849311/pexels-photo-9849311.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="search modal image"
+                <img
+                  src="https://images.pexels.com/photos/9849311/pexels-photo-9849311.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="search modal image"
                 />
               </div>
 
@@ -501,43 +481,8 @@
             <div class="search-modal-content">
               <div class="search-img">
                 <img
-                    src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="search modal image"
-                />
-              </div>
-
-              <div class="search-details">
-                <div class="search-star">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span class="review">10+ Review</span>
-                </div>
-                <div>
-                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
-                  <p class="search-price">
-                    <span class="">Price:</span>
-                    $250
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <button class="search-modal-cross item-cross">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-          </div>
-          <div class="search-modal-wrapper">
-            <div class="search-modal-content">
-              <div class="search-img">
-                 <img
-                    src="https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="search modal image"
+                  src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="search modal image"
                 />
               </div>
 
@@ -571,8 +516,43 @@
             <div class="search-modal-content">
               <div class="search-img">
                 <img
-                    src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="search modal image"
+                  src="https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="search modal image"
+                />
+              </div>
+
+              <div class="search-details">
+                <div class="search-star">
+                  <span class="star"
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                    ><i class="fa-solid fa-star"></i
+                  ></span>
+                  <span class="review">10+ Review</span>
+                </div>
+                <div>
+                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
+                  <p class="search-price">
+                    <span class="">Price:</span>
+                    $250
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+              <button class="search-modal-cross item-cross">
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+          </div>
+          <div class="search-modal-wrapper">
+            <div class="search-modal-content">
+              <div class="search-img">
+                <img
+                  src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  alt="search modal image"
                 />
               </div>
 
@@ -644,7 +624,7 @@
     <!--=============== HERO SECTION START =======================-->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <!-- slider-1 -->
+        <!--========== slider-1 ==============-->
         <div class="swiper-slide">
           <img
             src="https://images.pexels.com/photos/3800060/pexels-photo-3800060.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -656,7 +636,7 @@
           </div>
         </div>
 
-        <!-- slider-2 -->
+        <!--========= slider-2 ============-->
         <div class="swiper-slide">
           <img
             src="https://images.pexels.com/photos/7670737/pexels-photo-7670737.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -668,7 +648,7 @@
           </div>
         </div>
 
-        <!-- slider-3 -->
+        <!--======= slider-3 =========-->
         <div class="swiper-slide">
           <img
             src="https://images.pexels.com/photos/2633987/pexels-photo-2633987.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -681,7 +661,7 @@
           </div>
         </div>
 
-        <!-- slider-4 -->
+        <!--======== slider-4 ===========-->
         <div class="swiper-slide">
           <img
             src="https://images.pexels.com/photos/1653085/pexels-photo-1653085.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -693,7 +673,7 @@
           </div>
         </div>
 
-        <!-- slider-5 -->
+        <!--=========== slider-5 =============-->
         <div class="swiper-slide">
           <img
             src="https://images.pexels.com/photos/7256151/pexels-photo-7256151.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -704,7 +684,7 @@
             <button>Shop Now</button>
           </div>
         </div>
-        <!-- slider-6 -->
+        <!--=========== slider-6 =============-->
         <div class="swiper-slide">
           <img
             src="https://images.pexels.com/photos/7615876/pexels-photo-7615876.jpeg?auto=compress&cs=tinysrgb&w=600"
@@ -725,7 +705,7 @@
     <!--=============== HERO SECTION END =======================-->
     <!--============ BANNER ==================-->
     <div class="slick-slider-wrapper">
-      <div class="slick-slider container">
+      <div class="slick-slider wrapper">
         <div class="row slider">
           <div class="col-md-12">
             <div class="banner-img">
@@ -783,8 +763,5 @@
     </div>
 
     <!--============ SLICK SLIDER END ===============-->
-
-
-    
   </body>
 </html>

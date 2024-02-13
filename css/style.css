@@ -8,20 +8,15 @@
   box-sizing: border-box;
 }
 
-body {
-  overflow-x: hidden;
-}
-
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-thumb {
-  height: 2%;
+  height: 10%;
   background-color: orangered;
-  border-radius: 50px;
+  border-radius: 5px;
 }
-
 
 ::selection {
   background-color: #5bbdff;
@@ -44,14 +39,17 @@ body {
 body {
   font-family: "Comforta", sans-serif;
   line-height: 1.8;
+  color: black;
   letter-spacing: 2px;
   word-spacing: 3px;
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 button {
@@ -60,9 +58,15 @@ button {
   color: white;
   border-radius: 5px;
 }
+
 button:hover {
   background-color: #d43900;
   transition: 0.5s;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
 }
 
 .top-header {
@@ -74,9 +78,11 @@ button:hover {
 
 .social-icons i {
   font-size: 18px;
+  cursor: pointer;
 }
-nav {
-  z-index: 101;
+
+.social-icons .follow {
+  font-size: 14px;
 }
 
 .social-icons i:hover {
@@ -114,44 +120,49 @@ button {
   font-size: 13px;
 }
 
-.language li a {
+.lang {
   color: white;
-  font-size: 14px;
 }
-.language li {
+
+.lang:hover {
+  color: white;
+}
+.language {
   position: relative;
 }
-
 .language-list {
-  background-color: rgb(20, 20, 20);
-  z-index: 1001;
-  height: 35vh;
-  width: 100%;
-  margin-top: 6px;
-  overflow: hidden;
-  position: absolute;
   display: none;
-}
-
-.language-list li {
-  margin-top: 8px;
-  margin-left: -18px;
-}
-.language-list li a {
-  text-decoration: none;
-  color: white;
-  font-size: 14px;
-
-  overflow: hidden;
-}
-
-.language-list li a:hover {
+  position: absolute;
+  top: 30px;
+  left: 10%;
+  background-color: white;
+  color: black;
   width: 100%;
+  height: 40vh;
+  padding: 30px;
+  z-index: 1007;
+}
+
+.language:hover .language-list {
+  display: block;
   color: orangered;
-  border-radius: 5px;
+  flex-direction: column;
   transition: 0.5s;
 }
 
+.language-list .link-item {
+  font-size: 18px;
+  font-family: Outfit;
+}
+.language-list .link-item:hover {
+  color: orangered;
+  transition: 0.5s;
+}
+
+.dropdown {
+  display: flex;
+  align-items: center;
+}
 .dropdown-icon i {
   color: white;
   display: flex;
@@ -166,7 +177,7 @@ button {
 .modal {
   display: none;
   position: fixed;
-  top: 6%;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -213,75 +224,173 @@ button {
   color: white;
 }
 
+.modal-wrapper .cross-btn:hover {
+  transform: rotate(360deg);
+}
+
+.modal-wrapper button {
+  padding: 10px 20px;
+  font-size: 18px;
+}
+
 /*************** NAVBAR ************/
 
-nav .logo {
+nav {
+  height: 80px;
+}
+
+nav .logo a {
   font-family: BaiJamjuree;
   font-weight: bolder;
-}
-
-.search-form {
-  position: relative;
-}
-.search-icon {
-  position: absolute;
-  right: 20px;
-  top: 5px;
-  cursor: pointer;
-}
-
-.search-icon:hover {
-  color: orangered;
-}
-.logo {
-  font-size: 30px;
+  font-size: 34px;
   text-transform: uppercase;
-  font-weight: 700;
 }
-.logo span {
+
+.link-items a {
+  font-size: 20px;
+  font-family: Outfit;
+}
+
+.nav .logo span {
   color: orangered;
 }
 
-.login-btn {
-  font-size: 18px;
-}
-
-.cart-icon {
-  font-size: 24px;
-  color: black;
-  position: relative;
-  cursor: pointer;
-}
-
-.cart-num {
-  position: absolute;
-  color: orangered;
-  font-weight: bold;
-  margin-left: -20px;
-  margin-top: -4px;
-  font-size: 18px;
-}
-
-.login {
+.nav-items {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
 }
-.navbar-text,
-.navbar-brand,
-.nav-link {
-  color: black !important;
+
+.nav-items .dropdown {
+  display: flex;
+  gap: 3px;
 }
 
-.nav-link:hover {
-  color: orangered !important;
+.link-items {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+ul {
+  margin-bottom: 0;
+}
+
+.nav-left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-left .search-icon,
+.nav-left .user-icon,
+.nav-left .cart-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav-left .search-icon:hover,
+.nav-left .user-icon:hover {
+  color: orangered;
   transition: 0.5s;
 }
 
-.dropdown-item:hover {
-  background-color: orangered;
+.nav-left .cart {
+  position: relative;
+}
+
+.nav-left .cart-num {
+  position: absolute;
+  font-size: 14px;
+  right: 5%;
+  top: -15%;
+  color: #d43900;
+  font-weight: 700;
+}
+
+.link-items .link-item:hover,
+a.active {
+  color: orangered;
+}
+
+.toggle-nav {
+  display: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+
+.link-items .dropdown {
+  position: relative;
+}
+
+.dropdown-items1 {
+  display: none;
+  position: absolute;
+  top: 105%;
+  left: 10%;
+  transform: translateX(-43%);
+  background-color: white;
   color: white;
+  width: 25vw;
+  height: 40vh;
+  padding: 30px;
+  z-index: 1006;
+}
+.dropdown:hover .dropdown-items1 {
+  display: block;
+  display: flex;
   transition: 0.5s;
 }
 
+.dropdown-items2 {
+  display: grid;
+  grid-template-columns: row;
+  justify-content: space-between;
+  display: none;
+  position: absolute;
+  top: 105%;
+  left: 10%;
+  transform: translateX(-51%);
+  background-color: white;
+  color: white;
+  width: 80vw;
+  height: 60vh;
+  padding: 30px;
+  z-index: 1006;
+}
+.dropdown:hover .dropdown-items2 {
+  display: block;
+  display: flex;
+  transition: 0.5s;
+}
+.dropdown-list .drop-heading {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.link-item {
+  position: relative;
+}
+
+.link-item::after {
+  content: "";
+  width: 0%;
+  height: 0.1rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #eb4019;
+  transition: 0.5s;
+}
+.link-item:hover::after {
+  width: 100%;
+}
+/*************************** cart modal *******************************/
 .cart-modal {
   display: none;
   position: fixed;
@@ -291,7 +400,7 @@ nav .logo {
   transform: translateX(100%);
   background-color: orangered;
   padding: 30px;
-  z-index: 1000;
+  z-index: 1003;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -384,26 +493,28 @@ nav .logo {
   justify-content: space-between;
 }
 
-/* search modal */
+/***************************** search modal *************************/
 
 .search-modal {
   background-color: orangered;
   width: 65%;
-  padding: 3px;
+  padding: 20px;
   height: 80vh;
   margin-left: 20%;
-  z-index: 2000;
+  z-index: 1004;
   position: fixed;
   display: none;
-  
 }
 
 .search-wrapper {
   margin: auto;
   overflow: hidden;
-}
-.search-modal-container {
   background-color: white;
+  padding: 14px;
+  margin-top: 5%;
+}
+
+.search-modal-container {
   color: black;
   padding: 20px;
   width: 90%;
@@ -440,11 +551,28 @@ nav .logo {
   font-size: 18px;
 }
 
-.search-form {
-  width: 80%;
+.src-form {
+  width: 60%;
   margin: 55px auto;
+  position: relative;
 }
 
+.src-form .search-icon {
+  position: absolute;
+  right: 5%;
+  top: 2%;
+}
+
+.src-form input {
+  border: 1px solid;
+  padding: 2px 5px;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.src-form input:focus {
+  border: 1px solid orangered;
+}
 .search-modal .result {
   display: flex;
   justify-content: space-between;
@@ -557,7 +685,7 @@ nav .logo {
 .slick-next {
   background-color: orangered !important;
   color: white !important;
-  margin: 5px;
+
   align-items: center;
 }
 
@@ -569,10 +697,13 @@ nav .logo {
   background-color: black !important;
   transition: 0.5s;
 }
-.slick-prev {
-  margin-left: -5px;
-}
 
+.slick-prev {
+  left: 0px;
+}
+.slick-next {
+  right: 0px;
+}
 
 .slick-next:before {
   content: "\203A" !important;
@@ -581,3 +712,4 @@ nav .logo {
 .slick-prev:before {
   content: "\2039" !important;
 }
+
