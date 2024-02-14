@@ -1,50 +1,27 @@
 @media (max-width: 1279px) {
-  .swiper-content {
-    width: 80%;
+  .swiper .swiper-content {
+    width: 85%;
     top: 45%;
     left: 50%;
   }
 
-  .swiper-content p {
+  .swiper .swiper-content p {
     font-size: 50px;
     width: 100%;
   }
-  .swiper-button-prev {
-    margin-left: 16px !important;
-  }
+
   .modal .modal-wrapper {
     margin-top: 15%;
   }
 }
 
 @media (max-width: 1227px) {
-  .swiper-content {
-    width: 80%;
-    top: 45%;
-    left: 50%;
-  }
-
-  .swiper-content p {
-    font-size: 50px;
-    width: 100%;
-  }
-
   .modal .modal-wrapper {
     margin-top: 17%;
   }
 }
 
 @media (max-width: 1023px) {
-  .swiper-content {
-    width: 80%;
-    top: 45%;
-    left: 50%;
-  }
-  .swiper-content p {
-    font-size: 50px;
-    width: 100%;
-  }
-
   .cart-modal.active {
     display: block;
     transform: translateX(-9%);
@@ -60,6 +37,10 @@
 }
 
 @media (max-width: 973px) {
+  .swiper .swiper-content p {
+    font-size: 48px;
+    width: 100%;
+  }
   .nav .logo a {
     font-size: 28px;
   }
@@ -68,16 +49,6 @@
     display: none;
   }
 
-  .swiper-content {
-    width: 80%;
-    top: 45%;
-    left: 50%;
-  }
-
-  .swiper-content p {
-    font-size: 50px;
-    width: 100%;
-  }
   .result .search-view {
     padding: 0px 8px;
   }
@@ -91,6 +62,17 @@
 }
 
 @media (max-width: 900px) {
+  .swiper .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper .swiper-content p {
+    font-size: 47px;
+    width: 100%;
+  }
+
   .menu .link-items {
     display: none;
   }
@@ -148,21 +130,6 @@
     width: 100%;
   }
 
-  .nav .logo a {
-    font-size: 28px;
-  }
-
-  .swiper-content {
-    width: 70%;
-    top: 35%;
-    left: 50%;
-  }
-
-  .swiper-content p {
-    font-size: 40px;
-    width: 100%;
-  }
-
   .modal .modal-wrapper .save {
     font-size: 36px;
     margin-top: 0px;
@@ -179,7 +146,35 @@
   }
 }
 
+@media screen and (max-width: 816px) {
+  .swiper .swiper-content {
+    width: 95%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper .swiper-content p {
+    font-size: 42px;
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .swiper .swiper-content {
+    width: 95%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper .swiper-content p {
+    font-size: 44px;
+    width: 100%;
+    text-align: center;
+  }
+  .swiper .swiper-content button {
+    margin-left: 40%;
+  }
+
   .top-header {
     height: 42px;
   }
@@ -227,8 +222,29 @@
 }
 
 @media screen and (max-width: 600px) {
-  .nav .logo a {
-    font-size: 24px;
+  header .top-header .lang,
+  header .top-header .language span {
+    display: none;
+  }
+
+  header .top-header .top-header-middle,
+  header .top-header .social-icons {
+    margin: 0 auto;
+  }
+
+  .swiper .swiper-content {
+    width: 90%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper .swiper-content p {
+    font-size: 40px;
+    width: 100%;
+    text-align: center;
+  }
+  .swiper .swiper-content button {
+    margin-left: 35%;
   }
 
   .cart-modal {
@@ -239,19 +255,10 @@
   header .search-modal .src-form {
     width: 90%;
   }
-  .welcome {
+  /* .welcome {
     display: none;
-  }
-  .swiper-content {
-    width: 80%;
-    top: 45%;
-    left: 55%;
-  }
+  } */
 
-  .swiper-content p {
-    font-size: 50px;
-    width: 100%;
-  }
   .cart-modal.active {
     display: block;
     transform: translateX(-6%);
@@ -282,6 +289,18 @@
 }
 
 @media screen and (max-width: 474px) {
+  .swiper .swiper-content {
+    width: 100%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper .swiper-content p {
+    font-size: 36px;
+    width: 100%;
+    text-align: center;
+  }
+
   .nav .logo a {
     font-size: 20px;
   }
@@ -338,15 +357,16 @@
 }
 
 @media screen and (max-width: 423px) {
-  .swiper-content {
-    width: 80%;
+  .swiper .swiper-content {
+    width: 100%;
     top: 45%;
-    left: 52%;
+    left: 50%;
   }
 
-  .swiper-content p {
-    font-size: 45px;
+  .swiper .swiper-content p {
+    font-size: 34px;
     width: 100%;
+    text-align: center;
   }
 
   .qunt {
@@ -391,6 +411,17 @@
   }
 }
 @media screen and (max-width: 385px) {
+  .swiper .swiper-content {
+    width: 100%;
+    top: 48%;
+    left: 50%;
+  }
+
+  .swiper .swiper-content p {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
   .language {
     display: none;
   }
@@ -431,20 +462,54 @@
     height: 120px;
   }
 }
-@media screen and (max-width: 353px) {
-  .swiper-content p {
-    font-size: 34px;
+@media screen and (max-width: 356px) {
+  .swiper .swiper-content {
     width: 100%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper .swiper-content p {
+    font-size: 26px;
+    width: 100%;
+    text-align: center;
+  }
+  .swiper .swiper-content button {
+    margin-left: 30%;
   }
 
   .qunt-btn button {
     padding: 3px 5px;
   }
 }
-@media screen and (max-width: 282px) {
-  .swiper-content p {
-    font-size: 20px;
+@media screen and (max-width: 283px) {
+  nav .nav-items .logo a {
+    font-size: 16px;
+  }
+  nav .nav-left .search-icon,
+  nav .nav-left .user-icon,
+  nav .nav-left .cart-icon {
+    font-size: 16px;
+  }
+
+  .nav-items .toggle-nav {
+    font-size: 14px;
+    padding: 2px 8px;
+  }
+
+  .swiper .swiper-content {
     width: 100%;
+    top: 48%;
+    left: 50%;
+  }
+
+  .swiper .swiper-content p {
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+  }
+  .swiper .swiper-content button {
+    margin-left: 25%;
   }
   .modal .modal-wrapper span {
     font-size: 14px;
@@ -458,8 +523,22 @@
 }
 
 @media screen and (max-width: 268px) {
-  .top-header-middle p {
+  header .top-header .top-header-middle p {
     display: none;
+  }
+  .swiper .swiper-content {
+    width: 100%;
+    top: 45%;
+    left: 50%;
+  }
+
+  .swiper .swiper-content p {
+    font-size: 24px;
+    width: 100%;
+    text-align: center;
+  }
+  .swiper .swiper-content button {
+    margin-left: 20%;
   }
 
   .modal .modal-wrapper span {
@@ -473,6 +552,26 @@
   }
 }
 @media screen and (max-width: 220px) {
+  nav .nav-items .logo a {
+    font-size: 14px;
+  }
+  nav .nav-left .search-icon,
+  nav .nav-left .user-icon,
+  nav .nav-left .cart-icon {
+    font-size: 14px;
+  }
+
+  .nav-items .toggle-nav {
+    font-size: 12px;
+  }
+  .swiper .swiper-content p {
+    font-size: 22px;
+  }
+  .swiper .swiper-content button {
+    margin-left: 22%;
+    padding: 3px 10px;
+    font-size: 14px;
+  }
   .modal .modal-wrapper span {
     font-size: 12px;
   }
