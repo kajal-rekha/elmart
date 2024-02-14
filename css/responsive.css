@@ -12,6 +12,9 @@
   .swiper-button-prev {
     margin-left: 16px !important;
   }
+  .modal .modal-wrapper {
+    margin-top: 15%;
+  }
 }
 
 @media (max-width: 1227px) {
@@ -24,6 +27,10 @@
   .swiper-content p {
     font-size: 50px;
     width: 100%;
+  }
+
+  .modal .modal-wrapper {
+    margin-top: 17%;
   }
 }
 
@@ -41,6 +48,14 @@
   .cart-modal.active {
     display: block;
     transform: translateX(-9%);
+  }
+
+  .modal .modal-wrapper .save {
+    font-size: 48px;
+    margin-top: 0px;
+  }
+  .modal .modal-wrapper {
+    margin-top: 18%;
   }
 }
 
@@ -146,21 +161,39 @@
     font-size: 40px;
     width: 100%;
   }
+
+  .modal .modal-wrapper .save {
+    font-size: 36px;
+    margin-top: 0px;
+  }
+  .modal .modal-wrapper p {
+    width: 80vw;
+  }
+
+  .modal .modal-wrapper {
+    padding: 10px;
+  }
+  .modal .modal-wrapper {
+    margin-top: 20%;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .top-header {
     height: 42px;
   }
-  .modal-wrapper {
-    margin-top: 20%;
+  .modal .modal-wrapper {
+    margin-top: 25%;
   }
 
-  .modal-wrapper .save {
-    font-size: 40px;
+  .modal .modal-wrapper .save {
+    font-size: 38px;
     margin-top: 5px;
   }
 
+  .modal .modal-wrapper p {
+    width: 90vw;
+  }
   .swiper-content {
     width: 80%;
     top: 45%;
@@ -194,9 +227,6 @@
 
 @media screen and (max-width: 600px) {
   .nav .logo a {
-    font-size: 24px;
-  }
-  .modal-wrapper .save {
     font-size: 24px;
   }
 
@@ -236,6 +266,18 @@
     height: 180px;
     margin: 0 auto;
   }
+
+  .modal .modal-wrapper .save {
+    font-size: 32px;
+    margin-top: 5px;
+  }
+
+  .modal .modal-wrapper p {
+    width: 87vw;
+  }
+  .modal .modal-wrapper {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 474px) {
@@ -248,8 +290,13 @@
   .top-header .social-icons {
     display: none;
   }
-  .modal-wrapper p {
-    width: 100%;
+
+  .modal .modal-wrapper {
+    margin-top: 40%;
+  }
+
+  .modal .modal-wrapper .save {
+    font-size: 30px;
   }
 
   .cart-modal {
@@ -260,9 +307,6 @@
   }
   .cart-btn h3 {
     font-size: 20px;
-  }
-  .modal-content {
-    padding: 14px;
   }
 
   .cart-items {
@@ -310,6 +354,14 @@
   .search-details {
     width: 45%;
   }
+
+  .modal .modal-wrapper {
+    margin-top: 45%;
+  }
+
+  .modal .modal-wrapper .save {
+    font-size: 28px;
+  }
 }
 
 @media screen and (min-width: 400px) {
@@ -344,10 +396,10 @@
   .top-header-middle {
     margin: 0 auto;
   }
-  .modal-wrapper .save {
+  .modal .modal-wrapper .save {
     font-size: 25px;
   }
-  .modal-wrapper p {
+  .modal .modal-wrapper p {
     font-size: 20px;
   }
 
@@ -393,16 +445,43 @@
     font-size: 20px;
     width: 100%;
   }
+  .modal .modal-wrapper span {
+    font-size: 14px;
+  }
+  .modal .modal-wrapper .save {
+    font-size: 20px;
+  }
+  .modal .modal-wrapper p {
+    font-size: 16px;
+  }
 }
 
 @media screen and (max-width: 268px) {
   .top-header-middle p {
     display: none;
   }
-  .modal-wrapper .save {
-    font-size: 22px;
+
+  .modal .modal-wrapper span {
+    font-size: 12px;
   }
-  .modal-wrapper p {
-    font-size: 16px;
+  .modal .modal-wrapper .save {
+    font-size: 18px;
+  }
+  .modal .modal-wrapper p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 220px) {
+  .modal .modal-wrapper span {
+    font-size: 12px;
+  }
+  .modal .modal-wrapper .save {
+    font-size: 17px;
+  }
+  .modal .modal-wrapper p {
+    font-size: 14px;
+  }
+  .modal .modal-wrapper p {
+    width: 95vw;
   }
 }
