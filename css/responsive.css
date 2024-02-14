@@ -211,13 +211,17 @@
   }
 
   header .search-modal {
-    width: 100%;
-    margin-left: 0;
+    width: 95%;
+    margin-left: 5px;
   }
 
   .search-modal-content .search-title,
   .search-price {
     font-size: 14px;
+  }
+
+  header .search-modal .search-modal-wrapper .search-title {
+    width: 70%;
   }
 }
 
@@ -252,22 +256,36 @@
     left: 10%;
   }
 
-  header .search-modal .src-form {
-    width: 90%;
-  }
-  /* .welcome {
-    display: none;
-  } */
-
   .cart-modal.active {
     display: block;
     transform: translateX(-6%);
   }
 
-  .search-modal {
+  header .search-modal {
     width: 100%;
-    margin-left: 4%;
   }
+
+  header .search-modal .src-form {
+    width: 70%;
+  }
+
+  header .search-modal .search-view {
+    font-size: 14px;
+  }
+
+  header .search-modal .search-modal-wrapper p {
+    font-size: 16px;
+  }
+
+  header .search-modal .search-modal-wrapper .search-title {
+    width: 70%;
+  }
+
+  .search-modal .search-wrapper .search-modal-cross {
+
+  font-size: 16px;
+  padding: 5px 12px;
+}
 
   .banner-img {
     width: 200px;
@@ -319,6 +337,29 @@
     font-size: 30px;
   }
 
+  header .search-modal .search-modal-wrapper .search-img {
+    width: 80px;
+    height: 120px;
+  }
+
+  header .search-modal .search-modal-wrapper .search-star {
+    display: flex;
+    gap: 13px;
+  }
+
+  header .search-modal .search-modal-wrapper .item-cross {
+    float: right;
+    margin-top: -112px;
+  }
+
+  header .search-modal .search-details p {
+    font-size: 12px;
+  }
+
+  .search-modal-wrapper .result button {
+    font-size: 10px;
+    padding: 0px 5px;
+  }
   .cart-modal {
     width: 100vw;
   }
@@ -372,9 +413,6 @@
   .qunt {
     margin-left: 30px;
   }
-  .search-details {
-    width: 45%;
-  }
 
   .modal .modal-wrapper {
     margin-top: 45%;
@@ -383,9 +421,16 @@
   .modal .modal-wrapper .save {
     font-size: 28px;
   }
+
+  header .search-modal .search-details p {
+    font-size: 12px;
+  }
+  .search-modal .search-modal-wrapper {
+    margin-top: 40px;
+  }
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
   header .search-modal .search-details {
     width: 60%;
   }
@@ -398,7 +443,7 @@
 
   header .search-modal .search-img {
     width: 100px;
-    height: 120px;
+    height: 110px;
   }
 
   .item-cross {
@@ -406,8 +451,9 @@
     margin-top: -150px;
     padding: 5px 14px;
   }
-  .search-modal-wrapper {
-    margin-top: 20px;
+
+  .search-modal .search-modal-wrapper .search-details {
+    margin-top: 0px;
   }
 }
 @media screen and (max-width: 385px) {
@@ -461,6 +507,15 @@
     width: 100px;
     height: 120px;
   }
+
+  .search-modal-wrapper .search-details .search-price {
+  font-size: 10px;
+  margin-top: -5px;
+}
+
+.search-modal-wrapper .item-cross{
+  padding: 2px 5px;
+}
 }
 @media screen and (max-width: 356px) {
   .swiper .swiper-content {
@@ -480,6 +535,9 @@
 
   .qunt-btn button {
     padding: 3px 5px;
+  }
+  header .search-modal .src-form {
+    width: 80%;
   }
 }
 @media screen and (max-width: 283px) {
@@ -520,6 +578,19 @@
   .modal .modal-wrapper p {
     font-size: 16px;
   }
+
+  header .search-modal .search-img {
+    width: 70px;
+    height: 120px;
+  }
+
+  .search-modal-wrapper .search-modal-content {
+    gap: 10px;
+  }
+
+  .search-modal-wrapper .result button {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 268px) {
@@ -549,6 +620,15 @@
   }
   .modal .modal-wrapper p {
     font-size: 14px;
+  }
+
+  header .search-modal .search-modal-wrapper .search-img {
+    width: 70px;
+    height: 120px;
+  }
+
+  .search-modal-wrapper .review{
+    display: none;
   }
 }
 @media screen and (max-width: 220px) {
