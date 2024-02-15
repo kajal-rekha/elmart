@@ -403,7 +403,7 @@ a.active {
   top: 4px;
   right: 0;
   height: 100vh;
-  transform: translateX(100%);
+  transform: translateX(110%);
   background-color: orangered;
   padding: 30px;
   z-index: 1003;
@@ -412,7 +412,7 @@ a.active {
 
 .cart-modal.active {
   display: block;
-  transform: translateX(-11%);
+  transform: translateX(0);
 }
 
 .cart-img {
@@ -480,6 +480,9 @@ a.active {
   margin-left: 100px;
 }
 
+.qunt-btn button{
+  padding: 4px 12px;
+}
 .cart-scroll {
   overflow: auto;
   height: 65vh;
