@@ -26,6 +26,7 @@ $(".slider").slick({
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 1,
+  infinite: true,
   responsive: [
     {
       breakpoint: 1200,
@@ -51,6 +52,7 @@ $(".slider").slick({
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
+        infinite: true,
         arrows: false,
       },
     },
@@ -59,32 +61,9 @@ $(".slider").slick({
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1,
+        infinite: true,
         arrows: false,
       },
     },
   ],
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 

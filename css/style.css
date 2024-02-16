@@ -738,17 +738,23 @@ a.active {
 }
 
 .explore-heading {
-  text-align: center;
-  margin-bottom: 50px;
-  font-family: Outfit;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 70px;
 }
 
-.explore-heading button {
-  padding: 9px 28px;
-  font-size: 18px;
-  letter-spacing: 2px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.heading-title span {
+  text-transform: uppercase;
+  font-family: Comforta;
+}
+.heading-title h2 {
+  font-size: 34px;
+  font-family: BaiJamjuree;
+}
+
+.explore-heading .heading-line {
+  width: 10px;
+  background-color: orangered;
 }
 
 .explore-products .explore-img {
@@ -776,22 +782,83 @@ a.active {
   transform: scale(1.1);
 }
 
-/* .explore-img .explore-img-left .explore-img-heading {
-  position: absolute;
-  top: 20%;
-  right: 40%;
-  font-size: 30px;
-  color: white;
-  font-family: Outfit;
+.image-container {
+  position: relative;
+  overflow: hidden;
 }
-.explore-img .explore-img-left .explore-img-heading2 {
+
+.overlay {
   position: absolute;
-  top: 45%;
-  left: 40%;
-  font-size: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  height: 0;
+  transition: 0.5s;
+}
+
+.overlay .explore-img-heading1 {
   color: white;
-  font-family: Outfit;
-} */
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50%;
+}
+
+.overlay .explore-btn1 {
+  border-radius: 10px;
+  margin-left: 40%;
+  letter-spacing: 2px;
+}
+
+.overlay .explore-img-heading2 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 25%;
+}
+
+.overlay .explore-btn2 {
+  border-radius: 10px;
+  margin-left: 40%;
+  letter-spacing: 2px;
+}
+.overlay .explore-img-heading3 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50%;
+}
+
+.overlay .explore-btn3 {
+  border-radius: 10px;
+  margin-left: 30%;
+  letter-spacing: 2px;
+}
+.overlay .explore-img-heading4 {
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50%;
+}
+
+.overlay .explore-btn4 {
+  border-radius: 10px;
+  margin-left: 30%;
+  letter-spacing: 2px;
+}
+
+.image-container:hover .overlay {
+  height: 100%;
+}
+
+.image-container:hover img {
+  transform: scale(1.1);
+}
 
 .explore-img .explore-img-right {
   display: flex;

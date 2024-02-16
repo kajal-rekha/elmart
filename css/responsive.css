@@ -1,3 +1,43 @@
+@media (min-width: 1024px) {
+  .explore .explore-products .explore-img {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .explore .explore-img .explore-img-left {
+    width: 100%;
+    height: 830px;
+  }
+
+  .explore .explore-img-right .explore-img1-right {
+    width: 100%;
+    height: 400px;
+  }
+
+  .explore .explore-img-right .explore-img2-right .explore-img2-right1 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .explore .explore-img-right .explore-img2-right .explore-img2-right2 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .explore .explore-img .explore-img-right {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .explore .explore-img-right .explore-img2-right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+
 @media (max-width: 1279px) {
   .swiper .swiper-content {
     width: 85%;
@@ -92,6 +132,43 @@
   .search-modal-content {
     gap: 18px;
   }
+
+  .explore .overlay .explore-img-heading1 {
+    font-size: 15px;
+    margin-top: 50%;
+  }
+
+  .explore .overlay .explore-btn1 {
+    margin-left: 30%;
+  }
+
+  .explore .overlay .explore-img-heading2 {
+    font-size: 15px;
+    margin-top: 20%;
+  }
+
+  .explore .overlay .explore-btn2 {
+    margin-left: 35%;
+  }
+
+  .explore .overlay .explore-img-heading3 {
+    font-size: 12px;
+    margin-top: 50%;
+  }
+
+  .explore .overlay .explore-btn3 {
+    margin-left: 20%;
+  }
+  .explore .overlay .explore-img-heading4 {
+    font-size: 12px;
+
+    margin-top: 50%;
+  }
+
+  .explore .overlay .explore-btn4 {
+    border-radius: 10px;
+    margin-left: 20%;
+  }
 }
 
 @media (max-width: 900px) {
@@ -176,6 +253,13 @@
   }
   .modal .modal-wrapper {
     margin-top: 20%;
+  }
+
+  .explore .heading-title span {
+    font-size: 15px;
+  }
+  .explore .heading-title h2 {
+    font-size: 30px;
   }
 
   footer .top-footer {
@@ -294,6 +378,25 @@
     gap: 17px;
   }
 
+  .explore .overlay .explore-btn3 {
+    margin-left: 17%;
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .explore .overlay .explore-btn4 {
+    margin-left: 20%;
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .explore .heading-title span {
+    font-size: 13px;
+  }
+
+  .explore .heading-title h2 {
+    font-size: 24px;
+  }
   footer .top-footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -435,16 +538,50 @@
     gap: 15px;
   }
 
-  .explore .explore-heading {
-    margin-top: -50px;
+  .explore .overlay .explore-img-heading1 {
+    font-size: 14px;
   }
 
-  .explore .explore-heading h2 {
-    font-size: 20px;
+  .explore .overlay .explore-btn1 {
+    font-size: 10px;
+    margin-left: 25%;
   }
 
-  .explore .explore-heading button {
-    font-size: 16px;
+  .explore .overlay .explore-img-heading2 {
+    font-size: 14px;
+  }
+
+  .explore .overlay .explore-btn2 {
+    font-size: 10px;
+    margin-left: 25%;
+  }
+  .explore .overlay .explore-img-heading3 {
+    font-size: 12px;
+
+    padding: 0px;
+  }
+
+  .explore .overlay .explore-btn3 {
+    margin-left: 15%;
+    font-size: 10px;
+  }
+  .explore .overlay .explore-img-heading4 {
+    font-size: 12px;
+    text-align: center;
+    padding: 0px;
+  }
+
+  .explore .overlay .explore-btn4 {
+    margin-left: 15%;
+    font-size: 10px;
+  }
+
+  .explore .heading-title span {
+    font-size: 12px;
+  }
+
+  .explore .heading-title h2 {
+    font-size: 18px;
   }
 }
 
@@ -538,12 +675,57 @@
     font-size: 20px;
   }
 
-  .explore .explore-heading h2 {
-    font-size: 18px;
+  .explore .overlay .explore-img-heading1 {
+    font-size: 13px;
+    padding: 0px;
+    margin-top: 80%;
   }
 
-  .explore .explore-heading button {
-    font-size: 14px;
+  .explore .overlay .explore-btn1 {
+    font-size: 10px;
+    margin-left: 22%;
+    padding: 5px 8px;
+  }
+
+  .explore .overlay .explore-img-heading2 {
+    font-size: 13px;
+    padding: 0px;
+    margin-top: 40%;
+  }
+
+  .explore .overlay .explore-btn2 {
+    font-size: 10px;
+    margin-left: 22%;
+    padding: 5px 8px;
+  }
+  .explore .overlay .explore-img-heading3 {
+    font-size: 8px;
+
+    padding: 0px;
+  }
+
+  .explore .overlay .explore-btn3 {
+    margin-left: 15%;
+    font-size: 8px;
+    padding: 4px 7px;
+  }
+  .explore .overlay .explore-img-heading4 {
+    font-size: 8px;
+    padding: 5px 7px;
+    padding: 0px;
+  }
+
+  .explore .overlay .explore-btn4 {
+    margin-left: 15%;
+    font-size: 8px;
+    padding: 4px 7px;
+  }
+
+  .explore .heading-title span {
+    font-size: 10px;
+  }
+  .explore .heading-title h2 {
+    font-size: 15px;
   }
   footer .top-footer {
     display: grid;
@@ -625,6 +807,13 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 11px;
   }
+  .explore .heading-title span {
+    font-size: 9px;
+  }
+
+  .explore .heading-title h2 {
+    font-size: 13px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -674,6 +863,35 @@
   .swiper .swiper-content button {
     font-size: 16px;
     transform: translateX(-10%);
+  }
+
+  .explore .overlay .explore-img-heading3 {
+    font-size: 7px;
+    padding: 2px;
+  }
+
+  .explore .overlay .explore-btn3 {
+    margin-left: 10%;
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+
+  .explore .overlay .explore-img-heading4 {
+    font-size: 7px;
+    padding: 0px;
+  }
+
+  .explore .overlay .explore-btn4 {
+    margin-left: 10%;
+    font-size: 8px;
+    padding: 2px 4px;
+  }
+
+  .explore .heading-title span {
+    font-size: 8px;
+  }
+  .explore .heading-title h2 {
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 385px) {
@@ -738,12 +956,8 @@
     padding: 2px 5px;
   }
 
-  .explore .explore-heading h2 {
-    font-size: 17px;
-  }
-
-  .explore .explore-heading button {
-    font-size: 13px;
+  .explore .heading-title h2 {
+    font-size: 9px;
   }
 }
 @media screen and (max-width: 356px) {
@@ -814,12 +1028,27 @@
     height: 143px;
   }
 
-  .explore .explore-heading h2 {
-    font-size: 16px;
+  .explore .overlay .explore-btn3 {
+    margin-left: 9%;
+    font-size: 6px;
   }
 
-  .explore .explore-heading button {
-    font-size: 12px;
+  .explore .overlay .explore-img-heading4 {
+    font-size: 7px;
+    padding: 0px;
+  }
+
+  .explore .overlay .explore-btn4 {
+    margin-left: 9%;
+    font-size: 6px;
+  }
+
+  .explore .heading-title span {
+    font-size: 6px;
+  }
+
+  .explore .heading-title h2 {
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 283px) {
@@ -898,12 +1127,58 @@
     height: 138px;
   }
 
-  .explore .explore-heading h2 {
-    font-size: 15px;
+  .explore .explore-img-right .explore-img2-right .explore-img2-right2 {
+    width: 97%;
+    height: 143px;
   }
 
-  .explore .explore-heading button {
-    font-size: 11px;
+  .explore .overlay .explore-img-heading1 {
+    font-size: 10px;
+    padding: 0px;
+  }
+
+  .explore .overlay .explore-btn1 {
+    font-size: 8px;
+    margin-left: 20%;
+  }
+
+  .explore .overlay .explore-img-heading2 {
+    font-size: 10px;
+
+    padding: 0px;
+    margin-top: 15%;
+  }
+
+  .explore .overlay .explore-btn2 {
+    font-size: 8px;
+    margin-left: 18%;
+  }
+
+  .explore .overlay .explore-img-heading3 {
+    font-size: 6px;
+    padding: 0px;
+  }
+
+  .explore .overlay .explore-btn3 {
+    font-size: 3px;
+    margin-left: 11%;
+  }
+  .explore .overlay .explore-img-heading4 {
+    font-size: 7px;
+
+    padding: 0px;
+  }
+
+  .explore .overlay .explore-btn4 {
+    font-size: 3px;
+    margin-left: 11%;
+  }
+
+  .explore .heading-title span {
+    font-size: 5px;
+  }
+  .explore .heading-title h2 {
+    font-size: 7px;
   }
 }
 
@@ -944,6 +1219,14 @@
   .search-modal-wrapper .review {
     display: none;
   }
+
+  .explore .heading-title span {
+    font-size: 4px;
+  }
+
+  .explore .heading-title h2 {
+    font-size: 6px;
+  }
 }
 @media screen and (max-width: 220px) {
   nav .nav-items .logo a {
@@ -977,13 +1260,5 @@
   }
   .modal .modal-wrapper p {
     width: 95vw;
-  }
-
-  .explore .explore-heading h2 {
-    font-size: 14px;
-  }
-
-  .explore .explore-heading button {
-    font-size: 10px;
   }
 }
