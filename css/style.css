@@ -389,13 +389,16 @@ a.active {
 .cart-modal {
   display: none;
   position: fixed;
-  top: 4px;
+  top: -12px;
   right: 0;
-  height: 100vh;
-  transform: translateX(110%);
-  padding: 30px;
+  width: 40%;
+  height: auto;
+  transform: translateX(-110%);
+  padding: 10px;
   z-index: 1003;
-  transition: transform 0.5s ease-in-out;
+   transition: transform 0.5s, opacity 0.5s; /* Add transition for smooth animation */
+  background-color: #ffffff; /* Add background color */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
 .cart-modal.active {
@@ -404,7 +407,7 @@ a.active {
 }
 
 .cart-img {
-  width: 85px;
+  width: 90px;
   height: 100px;
   overflow: hidden;
 }
@@ -421,7 +424,7 @@ a.active {
   margin-bottom: 5px;
 }
 .cart-btn h3 {
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .cart-btn .cross-btn2 {
@@ -432,6 +435,9 @@ a.active {
   border-radius: 5px;
 }
 
+.modal-content {
+  padding: 40px;
+}
 .cart-items {
   display: flex;
   flex-direction: column;
@@ -440,37 +446,32 @@ a.active {
 
 .cart-item {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   overflow: hidden;
 }
 .cart-detail {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
 }
 
 .cart-detail h3 {
   font-size: 18px;
 }
 
-.cart-detail .remove {
-  margin-top: -10px;
-  cursor: pointer;
-}
-.cart-detail .remove:hover {
-  color: orangered;
+.qunt-btn button {
+  padding: 0px 8px;
+  background-color: white;
+  color: black;
   transition: 0.5s;
-}
-.qunt {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  margin-left: 100px;
+  border: 1px solid;
 }
 
-.qunt-btn button {
-  padding: 4px 12px;
+.qunt-btn button:hover {
+  background-color: orangered;
+border: 1ps solid orangered;
+  color: white;
 }
+
 .cart-scroll {
   overflow: auto;
   height: 65vh;
@@ -482,7 +483,8 @@ a.active {
   margin-top: 10px;
 }
 
-.total {
+
+.cart-bottom .total {
   display: flex;
   justify-content: space-between;
 }
@@ -758,7 +760,7 @@ a.active {
 
 .explore-img .explore-img-left {
   width: 630px;
-  height: 830px;
+  height: 828px;
   border-radius: 5px;
   overflow: hidden;
   position: relative;
