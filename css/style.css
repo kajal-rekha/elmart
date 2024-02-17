@@ -73,6 +73,7 @@ button:hover {
   margin: 0 auto;
 }
 
+/************** TOP HEADER ***************/
 .top-header {
   background-color: orangered;
   color: white;
@@ -178,6 +179,8 @@ button {
   color: black;
   transition: 0.5s;
 }
+
+/************* TOP MODAL ***************/
 
 .modal {
   display: none;
@@ -316,17 +319,6 @@ ul {
   position: relative;
 }
 
-/* .nav-left .cart-num {
-  position: absolute;
-  font-size: 15px;
-
-  top: -15%;
-  background-color: orangered;
-  color: white;
-  font-weight: 500;
-  border-radius: 50px;
-} */
-
 .link-items .link-item:hover,
 a.active {
   color: orangered;
@@ -346,7 +338,7 @@ a.active {
   position: relative;
 }
 
-.dropdown-items1 {
+.dropdown-items {
   display: none;
   position: absolute;
   top: 105%;
@@ -359,91 +351,10 @@ a.active {
   padding: 30px;
   z-index: 1006;
 }
-.dropdown:hover .dropdown-items1 {
+.dropdown:hover .dropdown-items {
   display: block;
   display: flex;
   transition: 0.5s;
-}
-
-.dropdown-items2 {
-  display: grid;
-  grid-template-columns: row;
-  justify-content: space-between;
-  display: none;
-  position: absolute;
-  top: 105%;
-  left: 10%;
-  transform: translateX(-51%);
-  background-color: white;
-  color: white;
-  width: 80vw;
-  height: auto;
-  padding: 30px;
-  z-index: 1006;
-}
-.dropdown:hover .dropdown-items2 {
-  display: block;
-  display: flex;
-  transition: 0.5s;
-}
-
-.dropdown-items3 {
-  display: none;
-  position: absolute;
-  top: 68%;
-  left: 95%;
-  background-color: white;
-  width: 50vw;
-  height: auto;
-  padding: 0px;
-  z-index: 1006;
-}
-.dropdown:hover .dropdown-items3 {
-  display: block;
-  display: flex;
-  transition: 0.5s;
-}
-
-.mobile-menu .dropdown-items3 .dropdown-list li a {
-  color: black;
-}
-
-.mobile-menu .dropdown-items3 .dropdown-list li a:hover {
-  color: orangered;
-}
-
-.dropdown-items4 {
-  display: grid;
-  grid-template-columns: row;
-  justify-content: space-between;
-  display: none;
-  position: absolute;
-  top: 105%;
-  left: 10%;
-  transform: translateX(-51%);
-  background-color: white;
-  width: 100vw;
-  height: auto;
-  padding: 30px;
-  z-index: 1006;
-}
-.dropdown:hover .dropdown-items4 {
-  display: block;
-  display: flex;
-  transition: 0.5s;
-}
-
-.mobile-menu .dropdown-items4 .dropdown-list li a {
-  color: black;
-}
-
-.mobile-menu .dropdown-items4 .dropdown-list li a:hover {
-  color: orangered;
-}
-
-.dropdown-list .drop-heading {
-  font-size: 30px;
-  font-weight: 600;
 }
 
 .link-item {
@@ -469,13 +380,11 @@ a.active {
   color: white;
 }
 
-/* .mobile-menu span:hover{
-  color: orangered;
-} */
 .mobile-menu .dropdown {
   display: flex;
   gap: 5px;
 }
+
 /*************************** cart modal *******************************/
 .cart-modal {
   display: none;

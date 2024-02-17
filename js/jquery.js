@@ -32,6 +32,18 @@ $(document).ready(function () {
   });
 
   $(".toggle-nav").on("click", function () {
-    $(".mobile-nav").toggle();
+    $(".mobile-nav").toggleClass("open");
+  });
+
+  $(".nav-cross").on("click", function () {
+    $(".mobile-nav").removeClass("open");
+  });
+
+  $(".dropdown").on("mouseenter", function () {
+    $(this).find(".dropdown-items2").addClass("open");
+  });
+
+  $(".dropdown").on("mouseleave", function () {
+    $(this).find(".dropdown-items2").removeClass("open");
   });
 });
