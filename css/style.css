@@ -59,7 +59,7 @@ button {
   padding: 10px 20px;
   background-color: orangered;
   color: white;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 button:hover {
@@ -598,7 +598,7 @@ a.active {
   margin: 0 auto;
   overflow: hidden;
   background-color: white;
-  padding: 10px;
+  padding: 20px;
   margin-top: 0%;
 }
 
@@ -722,17 +722,22 @@ a.active {
   position: absolute;
   top: 50%;
   left: 40%;
+  width: 75%;
   transform: translate(-50%, -50%);
-  font-size: 28px;
-  padding: 20px;
+  padding: 10px;
 }
 
-.swiper-content p {
+.swiper-content h1 {
   color: black;
   font-size: 50px;
   width: 100%;
-  font-family: Comforta;
+  font-family: Outfit;
   font-weight: 500;
+}
+
+.swiper-content p {
+  font-size: 18px;
+  width: 100%;
 }
 
 .swiper-content button {
