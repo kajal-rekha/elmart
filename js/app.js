@@ -25,8 +25,9 @@ $(".slider").slick({
   infinite: true,
   speed: 300,
   slidesToShow: 5,
-  slidesToScroll: 1,
-  infinite: true,
+  slidesToScroll: 3,
+  autoplay: true, 
+  autoplaySpeed: 2000,
   responsive: [
     {
       breakpoint: 1200,

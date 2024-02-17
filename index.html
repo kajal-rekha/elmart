@@ -6,25 +6,16 @@
     <title>Elmart</title>
 
     <!--================= CSS  =============-->
-    <link rel="stylesheet" href="./css/bootstrap.css" />
-    <link rel="stylesheet" href="./css/swiper.css" />
-    <link rel="stylesheet" href="./assets/fontawsome/all.min.css" />
-    <link rel="stylesheet" href="./assets/fontawsome/fontawesome.min.css" />
-    <link rel="stylesheet" href="./css/swiper.css" />
-    <link rel="stylesheet" href="./css/slick.min.css" />
-    <link rel="stylesheet" href="./css/slick.theme.css" />
-    <link rel="stylesheet" href="./css/animate.css" />
-    <link rel="stylesheet" href="./css/responsive.css" />
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!--================ SCRIPT ==============-->
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.js"></script>
-    <script src="./js/swiper.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/wow.min.js"></script>
-    <script src="./js/app.js" defer></script>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="assets/fontawsome/all.min.css" />
+    <link rel="stylesheet" href="assets/fontawsome/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/slick.min.css" />
+    <link rel="stylesheet" href="css/slick.theme.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
@@ -34,9 +25,9 @@
         <div class="top-header-content wrapper">
           <div class="social-icons wow slideInLeft">
             <span class="follow">Follow us: </span>
-            <span><i class="fab fa-facebook"></i></span>
-            <span><i class="fab fa-instagram"></i></span>
-            <span><i class="fab fa-twitter"></i></span>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
           </div>
 
           <div class="wow fadeInDown top-header-middle">
@@ -68,7 +59,7 @@
       </div>
       <!--=========== TOP HEADER MODAL START==============-->
 
-      <div class="wow fadeInDown modal">
+      <div class="modal">
         <div class="wrapper modal-wrapper">
           <button class="cross-btn"><i class="fa-solid fa-xmark"></i></button>
           <span>Special Deal</span>
@@ -169,9 +160,9 @@
             </div>
             <div class="cart">
               <span class="cart-icon">
-                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-bag-shopping"></i>
               </span>
-              <span class="cart-num">10</span>
+              <!-- <span class="cart-num"></span> -->
             </div>
           </div>
 
@@ -374,29 +365,84 @@
 
       <!--================== MOBILE NAV ========================-->
       <div class="mobile-nav">
-        <ul class="mobile-menu">
-          <li><a href="#home" class="active link-item">Home</a></li>
-          <li class="dropdown">
-            <a href="#page" class="link-item">Page</a>
-          </li>
-          <li class="dropdown">
-            <a href="#shop" class="link-item">Shop</a>
-          </li>
-          <li><a href="#blog" class="link-item">Blog</a></li>
-          <li><a href="#about" class="link-item">About</a></li>
-          <li><a href="#contact" class="link-item">Contact</a></li>
-        </ul>
+         <ul class="mobile-menu">
+              <li><a href="#home" class="active link-item">Home</a></li>
+              <li class="dropdown">
+                <a href="#page" class="link-item">Pages</a>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+                <div class="dropdown-items3">
+                  <ul class="dropdown-list">
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404 Error</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#shop" class="link-item">Shop</a>
+                <span><i class="fa-solid fa-caret-down"></i></span>
+                <div class="dropdown-items4">
+                  <ul class="dropdown-list">
+                    <li class="drop-heading">
+                      <a href="#" class="link-item">Shop Layout</a>
+                    </li>
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404 </a></li>
+                  </ul>
+
+                  <ul class="dropdown-list">
+                    <li class="drop-heading">
+                      <a href="#" class="link-item">Products List</a>
+                    </li>
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404 </a></li>
+                  </ul>
+
+                  <ul class="dropdown-list">
+                    <li class="drop-heading">
+                      <a href="#" class="link-item">Product Types</a>
+                    </li>
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404 </a></li>
+                  </ul>
+
+                  <ul class="dropdown-list">
+                    <li class="drop-heading">
+                      <a href="#" class="link-item">Brands</a>
+                    </li>
+                    <li><a href="#" class="link-item">About us</a></li>
+                    <li><a href="#" class="link-item">Service</a></li>
+                    <li><a href="#" class="link-item">Our Team</a></li>
+                    <li><a href="#" class="link-item">Faq</a></li>
+                    <li><a href="#" class="link-item">404</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#blog" class="link-item">Blog</a></li>
+              <li><a href="#contact" class="link-item">Contact</a></li>
+            </ul>
       </div>
 
       <!--==================== SEARCH MODAL =======================-->
 
       <div class="search-modal wrapper">
-        <div class="search-modal-wrapper search-wrapper">
+        <div class="search-wrapper">
           <button id="closeModal" class="search-modal-cross">
             <i class="fa-solid fa-xmark"></i>
           </button>
           <form class="d-flex src-form">
-            <input type="search" placeholder=" Search " />
+            <input type="search" placeholder="Search" />
             <span class="search-icon"
               ><i class="fa-solid fa-magnifying-glass"></i
             ></span>
@@ -407,214 +453,233 @@
             <button type="button" class="search-view">View All</button>
           </div>
 
-          <div class="search-modal-wrapper">
-            <div class="search-modal-content">
-              <div class="search-img">
-                <img
-                  src="https://images.pexels.com/photos/3387577/pexels-photo-3387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="search modal image"
-                />
-              </div>
+          <div class="search-product">
+            <div class="search-modal-wrapper">
+              <div class="search-modal-content">
+                <div class="search-img">
+                  <img
+                    src="https://images.pexels.com/photos/3387577/pexels-photo-3387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="search modal image"
+                  />
+                </div>
 
-              <div class="search-details">
-                <div class="search-star">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span class="review">(10)</span>
-                </div>
-                <div>
-                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
-                  <p class="search-price">
-                    <span class="">Price:</span>
-                    $250
-                  </p>
+                <div class="search-details">
+                  <div class="search-star">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span class="review">(10)</span>
+                  </div>
+                  <div>
+                    <p class="search-title">
+                      Eternal Elegance Diamond Necklace.
+                    </p>
+                    <p class="search-price">
+                      <span class="">Price:</span>
+                      $250
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <button class="item-cross">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-          </div>
-          <div class="search-modal-wrapper">
-            <div class="search-modal-content">
-              <div class="search-img">
-                <img
-                  src="https://images.pexels.com/photos/9849311/pexels-photo-9849311.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="search modal image"
-                />
+              <div>
+                <button class="item-cross">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
               </div>
+            </div>
 
-              <div class="search-details">
-                <div class="search-star">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span class="review">(10)</span>
+            <div class="search-modal-wrapper">
+              <div class="search-modal-content">
+                <div class="search-img">
+                  <img
+                    src="https://images.pexels.com/photos/9849311/pexels-photo-9849311.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="search modal image"
+                  />
                 </div>
-                <div>
-                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
-                  <p class="search-price">
-                    <span class="">Price:</span>
-                    $250
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <button class="item-cross">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-          </div>
-          <div class="search-modal-wrapper">
-            <div class="search-modal-content">
-              <div class="search-img">
-                <img
-                  src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="search modal image"
-                />
-              </div>
 
-              <div class="search-details">
-                <div class="search-star">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span class="review">(10)</span>
-                </div>
-                <div>
-                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
-                  <p class="search-price">
-                    <span class="">Price:</span>
-                    $250
-                  </p>
+                <div class="search-details">
+                  <div class="search-star">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span class="review">(10)</span>
+                  </div>
+                  <div>
+                    <p class="search-title">
+                      Eternal Elegance Diamond Necklace.
+                    </p>
+                    <p class="search-price">
+                      <span class="">Price:</span>
+                      $250
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <button class="item-cross">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-          </div>
-          <div class="search-modal-wrapper">
-            <div class="search-modal-content">
-              <div class="search-img">
-                <img
-                  src="https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="search modal image"
-                />
+              <div>
+                <button class="item-cross">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
               </div>
+            </div>
 
-              <div class="search-details">
-                <div class="search-star">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span class="review">(10)</span>
+            <div class="search-modal-wrapper">
+              <div class="search-modal-content">
+                <div class="search-img">
+                  <img
+                    src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="search modal image"
+                  />
                 </div>
-                <div>
-                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
-                  <p class="search-price">
-                    <span class="">Price:</span>
-                    $250
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <button class="item-cross">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-          </div>
-          <div class="search-modal-wrapper">
-            <div class="search-modal-content">
-              <div class="search-img">
-                <img
-                  src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&w=600"
-                  alt="search modal image"
-                />
-              </div>
 
-              <div class="search-details">
-                <div class="search-star">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span class="review">(10)</span>
-                </div>
-                <div>
-                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
-                  <p class="search-price">
-                    <span class="">Price:</span>
-                    $250
-                  </p>
+                <div class="search-details">
+                  <div class="search-star">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span class="review">(10)</span>
+                  </div>
+                  <div>
+                    <p class="search-title">
+                      Eternal Elegance Diamond Necklace.
+                    </p>
+                    <p class="search-price">
+                      <span class="">Price:</span>
+                      $250
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div>
-              <button class="item-cross">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
-            </div>
-          </div>
-          <div class="search-modal-wrapper">
-            <div class="search-modal-content">
-              <div class="search-img">
-                <img
-                  src="https://images.pexels.com/photos/3387577/pexels-photo-3387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt="search modal image"
-                />
+              <div>
+                <button class="item-cross">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
               </div>
+            </div>
 
-              <div class="search-details">
-                <div class="search-star">
-                  <span class="star"
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                    ><i class="fa-solid fa-star"></i
-                  ></span>
-                  <span class="review">(10)</span>
+            <div class="search-modal-wrapper">
+              <div class="search-modal-content">
+                <div class="search-img">
+                  <img
+                    src="https://images.pexels.com/photos/1021693/pexels-photo-1021693.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="search modal image"
+                  />
                 </div>
-                <div>
-                  <p class="search-title">Eternal Elegance Diamond Necklace.</p>
-                  <p class="search-price">
-                    <span class="">Price:</span>
-                    $250
-                  </p>
+
+                <div class="search-details">
+                  <div class="search-star">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span class="review">(10)</span>
+                  </div>
+                  <div>
+                    <p class="search-title">
+                      Eternal Elegance Diamond Necklace.
+                    </p>
+                    <p class="search-price">
+                      <span class="">Price:</span>
+                      $250
+                    </p>
+                  </div>
                 </div>
               </div>
+              <div>
+                <button class="item-cross">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
             </div>
-            <div>
-              <button class="item-cross">
-                <i class="fa-solid fa-xmark"></i>
-              </button>
+
+            <div class="search-modal-wrapper">
+              <div class="search-modal-content">
+                <div class="search-img">
+                  <img
+                    src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&w=600"
+                    alt="search modal image"
+                  />
+                </div>
+
+                <div class="search-details">
+                  <div class="search-star">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span class="review">(10)</span>
+                  </div>
+                  <div>
+                    <p class="search-title">
+                      Eternal Elegance Diamond Necklace.
+                    </p>
+                    <p class="search-price">
+                      <span class="">Price:</span>
+                      $250
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="item-cross">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="search-modal-wrapper">
+              <div class="search-modal-content">
+                <div class="search-img">
+                  <img
+                    src="https://images.pexels.com/photos/3387577/pexels-photo-3387577.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="search modal image"
+                  />
+                </div>
+
+                <div class="search-details">
+                  <div class="search-star">
+                    <span class="star"
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                    ></span>
+                    <span class="review">(10)</span>
+                  </div>
+                  <div>
+                    <p class="search-title">
+                      Eternal Elegance Diamond Necklace.
+                    </p>
+                    <p class="search-price">
+                      <span class="">Price:</span>
+                      $250
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="item-cross">
+                  <i class="fa-solid fa-xmark"></i>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -842,17 +907,20 @@
                 Express Center
               </p>
               <p>
-                <span><i class="fa-solid fa-phone"></i></span> +088123456789
+                <a href="#"><i class="fa-solid fa-phone"></i>+088123456789</a>
               </p>
               <p>
-                <span><i class="fa-solid fa-envelope"></i></span>
-                elmart@gmail.com
+                <a href="#"
+                  ><i class="fa-solid fa-envelope"></i>elmart123@gmail.com</a
+                >
               </p>
+
+
               <div class="social-links">
-                <span><i class="fa-brands fa-facebook"></i></span>
-                <span><i class="fa-brands fa-twitter"></i></span>
-                <span><i class="fa-brands fa-instagram"></i></span>
-                <span><i class="fa-brands fa-linkedin"></i> </span>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
               </div>
             </div>
           </div>
@@ -898,9 +966,18 @@
         <hr />
 
         <div class="down-footer">
-          <p>&copy;2024 <span>Elmart.</span> All rights reserved.</p>
+          <p>&copy;2024 <a href="#" class="link-item">Elmart.</a> All rights reserved.</p>
         </div>
       </div>
     </footer>
+
+    <!--================ SCRIPT ==============-->
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>

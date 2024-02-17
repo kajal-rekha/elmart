@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
   // open modal
   $(".top-header-btn").on("click", function () {
     $(".modal").fadeIn(1000);
