@@ -1,36 +1,35 @@
 $(document).ready(function () {
-  // open modal
+  // ********* top header open modal  *********//
   $(".top-header-btn").on("click", function () {
     $(".modal").fadeIn(1000);
   });
 
-  // close modal
+  //********* top header close modal  **********//
   $(".cross-btn").on("click", function () {
     $(".modal").fadeOut(1000);
   });
 
-  $(".dropdown-icon").on("click", function () {
-    $(".language-list").toggle();
+  // ********* cart open modal  *********//
+  $(".cart-icon ").on("click", function () {
+    $("#cartModal").toggleClass("show");
   });
 
-  $(".cart-icon").on("click", function () {
-    setTimeout(function () {
-      $("#cartModal").addClass("active");
-    }, 500);
-  });
-
+  // ********* cart close modal  *********//
   $(".cross-btn2").on("click", function () {
-    $("#cartModal").removeClass("active");
+    $("#cartModal").removeClass("show");
   });
 
+  // ********* search open modal  *********//
   $(".search-icon").on("click", function () {
     $(".search-modal").fadeIn();
   });
 
+  // ********* search close modal  *********//
   $(".search-modal-cross").on("click", function () {
     $(".search-modal").fadeOut();
   });
 
+  // ********* nav toggle open   *********//
   $(".toggle-nav").on("click", function () {
     $(".mobile-nav").toggleClass("open");
   });
