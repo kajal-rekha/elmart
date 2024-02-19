@@ -38,11 +38,46 @@ $(document).ready(function () {
     $(".mobile-nav").removeClass("open");
   });
 
-  $(".dropdown").on("mouseenter", function () {
+  $(".mobile-dropdown").on("mouseenter", function () {
     $(this).find(".dropdown-items2").addClass("open");
   });
 
-  $(".dropdown").on("mouseleave", function () {
+  $(".mobile-dropdown").on("mouseleave", function () {
     $(this).find(".dropdown-items2").removeClass("open");
   });
+
+  //********* update subtotal  *********//
+  function updateSubtotal() {
+    var subtotal = 0;
+    $(".cart-item").each(function () {
+      var quantity = parseInt($(this).find(".quantity").text());
+      var pricePerItem = parseFloat($(this).find(".item-total").data("price"));
+      var itemTotal = quantity * pricePerItem;
+      $(this)
+        .find(".item-total")
+        .text("$" + itemTotal.toFixed(2));
+      subtotal += itemTotal;
+    });
+    $(".subtotal").text("$" + subtotal.toFixed(2));
+  }
+
+  //********** Increment quantity   ************//
+  $(document).on("click", ".increment", function () {
+    var $quantityElement = $(this).siblings(".quantity");
+    var currentValue = parseInt($quantityElement.text());
+    $quantityElement.text(currentValue + 1);
+    updateSubtotal();
+  });
+
+  //********** Decrement quantity  ************//
+  $(document).on("click", ".decrement", function () {
+    var $quantityElement = $(this).siblings(".quantity");
+    var currentValue = parseInt($quantityElement.text());
+    if (currentValue > 1) {
+      $quantityElement.text(currentValue - 1);
+      updateSubtotal();
+    }
+  });
+
+  updateSubtotal();
 });

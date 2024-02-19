@@ -26,7 +26,7 @@ $(".slider").slick({
   speed: 300,
   slidesToShow: 5,
   slidesToScroll: 3,
-  autoplay: true, 
+  autoplay: true,
   autoplaySpeed: 2000,
   responsive: [
     {
@@ -67,4 +67,29 @@ $(".slider").slick({
       },
     },
   ],
+});
+
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  nav: true,
+  dots: true,
+   autoplay: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    600: {
+      items: 2,
+    },
+    1000: {
+      items: 3,
+    },
+    1280: {
+      items: 4,
+    },
+    1480: {
+      items: 5,
+    },
+  },
 });
