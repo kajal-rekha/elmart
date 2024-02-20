@@ -22,11 +22,12 @@ $(document).ready(function () {
   // ********* search open modal  *********//
   $(".search-icon").on("click", function () {
     $(".search-modal").fadeIn();
+    $(".search-modal-overlay").fadeIn();
   });
 
-  // ********* search close modal  *********//
-  $(".search-modal-cross").on("click", function () {
+  $(".search-modal-cross, .search-modal-overlay").on("click", function () {
     $(".search-modal").fadeOut();
+    $(".search-modal-overlay").fadeOut();
   });
 
   // ********* nav toggle open   *********//
@@ -36,14 +37,6 @@ $(document).ready(function () {
 
   $(".nav-cross").on("click", function () {
     $(".mobile-nav").removeClass("open");
-  });
-
-  $(".mobile-dropdown").on("mouseenter", function () {
-    $(this).find(".dropdown-items2").addClass("open");
-  });
-
-  $(".mobile-dropdown").on("mouseleave", function () {
-    $(this).find(".dropdown-items2").removeClass("open");
   });
 
   //********* update subtotal  *********//

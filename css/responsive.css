@@ -18,9 +18,9 @@
     width: 33%;
   }
 
- .products .products-images .product-image img {
-  width: 100%;
-}
+  .products .products-images .product-image img {
+    width: 100%;
+  }
 }
 
 @media (max-width: 1227px) {
@@ -283,24 +283,45 @@
     display: none;
     top: 100%;
     left: 0;
-    transform: translateX(-10%);
+    transform: translateX(-12%);
     transition: 0.5s;
     z-index: 915;
   }
 
-  .mobile-nav .dropdown-items2.open {
-    display: block;
-  }
-
+  
   .mobile-nav .mobile-menu .dropdown-list {
     display: flex;
     flex-direction: column;
     gap: 10px;
   }
 
+  .mobile-dropdown:hover .pages {
+    display: block;
+  }
 
 
-  header .nav .nav-left{
+  .mobile-dropdown:hover .shop {
+    display: block;
+  }
+
+
+  .mobile-dropdown .list2 ul{
+    display: none;
+  }
+
+
+  .list2:hover ul{
+    display: block;
+  }
+  
+.list2 .shop-heading{
+ transform: translateX(12%);
+ margin-bottom: 5px;
+ display: inline-block;
+}
+
+
+  header .nav .nav-left {
     margin-right: -20%;
   }
   /********************** TOP MODAL WRAPPER  START**************************/
@@ -471,11 +492,9 @@
     padding: 0 5px;
   }
 
-
-  header .nav .nav-left{
+  header .nav .nav-left {
     margin-right: -15%;
   }
-
 
   footer .top-footer {
     display: grid;
@@ -913,9 +932,7 @@
 }
 
 @media screen and (max-width: 400px) {
-
-
-  header .nav .nav-left{
+  header .nav .nav-left {
     margin-right: -10%;
   }
   header .search-modal .search-details {
@@ -984,7 +1001,7 @@
   }
 }
 @media screen and (max-width: 385px) {
-  header .nav .nav-left{
+  header .nav .nav-left {
     margin-right: -8%;
   }
   .swiper .swiper-content {
@@ -1063,7 +1080,7 @@
   }
 }
 @media screen and (max-width: 356px) {
-  header .nav .nav-left{
+  header .nav .nav-left {
     margin-right: -6%;
   }
   .swiper .swiper-content {
@@ -1141,8 +1158,7 @@
   }
 }
 @media screen and (max-width: 283px) {
-
-  header .nav .nav-left{
+  header .nav .nav-left {
     margin-right: -5%;
   }
   nav .nav-items .logo a {
@@ -1279,7 +1295,7 @@
 }
 
 @media screen and (max-width: 268px) {
-  header .nav .nav-left{
+  header .nav .nav-left {
     margin-right: -2%;
   }
   header .top-header .top-header-middle p {
