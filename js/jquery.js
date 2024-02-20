@@ -73,4 +73,15 @@ $(document).ready(function () {
   });
 
   updateSubtotal();
+
+  //***************  PRELOADER ANIMATION  *******************//
+  $(window).on("load", function () {
+    const loader = $(".loader");
+
+    loader.addClass("loader--hidden");
+
+    loader.on("transitionend", function () {
+      loader.remove();
+    });
+  });
 });
