@@ -283,7 +283,7 @@
     display: none;
     top: 100%;
     left: 0;
-    transform: translateX(-12%);
+    transform: translateX(-10%);
     transition: 0.5s;
     z-index: 915;
   }
@@ -315,7 +315,7 @@
   }
   
 .list2 .shop-heading{
- transform: translateX(12%);
+ transform: translateX(10%);
  margin-bottom: 5px;
  display: inline-block;
 }
