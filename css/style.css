@@ -578,10 +578,14 @@ a.active {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1003;
+  z-index: 1002;
   display: none;
 }
 
+
+body.modal-open {
+    overflow: hidden;
+}
 .search-modal {
   width: 65%;
   padding: 10px;
@@ -1325,7 +1329,6 @@ footer {
 }
 
 /************** PRELOADER ANIMATION ****************/
-
 .loader {
   position: fixed;
   top: 0;
