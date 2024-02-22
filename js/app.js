@@ -14,7 +14,7 @@ var swiper = new Swiper(".mySwiper", {
   breakpoints: {
     768: {
       slidesPerView: 2,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
   },
 });
@@ -70,16 +70,19 @@ $(".slider").slick({
 });
 
 $(".owl-carousel").owlCarousel({
+  items: 3,
+  dots: true,
+  dotsEach: true,
   loop: true,
-  margin: 10,
-  nav: true,
-  dots: false,
+  margin: 20,
+  nav: false,
+  dots: true,
   autoplay: true,
   responsive: {
     0: {
       items: 1,
     },
-    600: {
+    450: {
       items: 2,
     },
     1000: {
@@ -93,4 +96,3 @@ $(".owl-carousel").owlCarousel({
     },
   },
 });
-

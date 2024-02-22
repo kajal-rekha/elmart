@@ -39,6 +39,42 @@ $(document).ready(function () {
     $(".mobile-nav").removeClass("open");
   });
 
+  $(".mobile-dropdown").click(function (e) {
+    e.stopPropagation();
+
+    $(this).toggleClass("active").find(".dropdown-items2").slideToggle(800);
+
+    $(".mobile-dropdown")
+      .not(this)
+      .removeClass("active")
+      .find(".dropdown-items2")
+      .slideUp();
+  });
+
+  $(".dropdown-list").click(function (e) {
+    e.stopPropagation();
+  });
+
+  $(".shop-heading").click(function (e) {
+    e.stopPropagation();
+
+    $(this).next("ul").slideToggle(800);
+
+    $(".shop-heading").not(this).next("ul").slideUp();
+  });
+
+  $(document).click(function () {
+    $(".mobile-dropdown")
+      .removeClass("active")
+      .find(".dropdown-items2")
+      .slideUp();
+    $(".shop-heading").next("ul").slideUp();
+  });
+
+  $(".dropdown-items2").click(function (e) {
+    e.stopPropagation();
+  });
+
   //********* update subtotal  *********//
   function updateSubtotal() {
     var subtotal = 0;
