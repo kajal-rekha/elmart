@@ -218,6 +218,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
     transform: translateX(-100%);
+    
   }
 
   .mobile-nav.open {
@@ -230,6 +231,7 @@
     gap: 10px;
     height: 80%;
     overflow-y: auto;
+    overflow-x: hidden;
   }
 
   .mobile-nav .nav-cross {
@@ -276,7 +278,6 @@
   .list2 .shop-heading {
     transform: translateX(12%);
     margin-top: 10px;
-    width: 60%;
     margin-left: 10px;
   }
 
@@ -854,6 +855,10 @@
 }
 
 @media screen and (max-width: 423px) {
+
+  header .mobile-nav{
+    width: 70%;
+  }
   .swiper .swiper-content {
     width: 100%;
     top: 45%;
@@ -932,6 +937,10 @@
   header .nav .nav-left {
     margin-right: -10%;
   }
+
+  header .mobile-nav{
+    width: 75%;
+  }
   header .search-modal .search-details {
     width: 60%;
   }
@@ -963,6 +972,7 @@
     font-size: 16px;
     transform: translateX(-10%);
   }
+  
 
   .explore .overlay .explore-img-heading3 {
     font-size: 7px;
@@ -1004,6 +1014,9 @@
 @media screen and (max-width: 385px) {
   header .nav .nav-left {
     margin-right: -8%;
+  }
+  header .mobile-nav{
+    width: 85%;
   }
   .swiper .swiper-content {
     width: 100%;
@@ -1083,6 +1096,7 @@
     padding: 20px;
   }
 
+  
   .products .products-images .product-image img {
     width: 100%;
   }
@@ -1182,7 +1196,7 @@
     font-size: 24px !important;
   }
 
-  body .quick-view-modal{
+  body .quick-view-modal {
     width: 290px;
   }
   body .quick-view-modal {
@@ -1192,6 +1206,9 @@
 @media screen and (max-width: 283px) {
   header .nav .nav-left {
     margin-right: -5%;
+  }
+  header .mobile-nav{
+    width: 95%;
   }
   nav .nav-items .logo a {
     font-size: 16px;
@@ -1434,5 +1451,3 @@
     font-size: 18px !important;
   }
 }
-
-
