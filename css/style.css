@@ -17,7 +17,6 @@ body {
   word-spacing: 3px;
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -62,12 +61,12 @@ button {
   background-color: orangered;
   color: white;
   border-radius: 10px;
+  transition: 0.5s;
 }
 
 button:hover {
   background-color: black;
   color: white;
-  transition: 0.5s;
 }
 
 .wrapper {
@@ -87,6 +86,7 @@ button:hover {
   font-size: 18px;
   cursor: pointer;
   color: white;
+  transition: 0.5s;
 }
 
 .social-icons .follow {
@@ -95,12 +95,12 @@ button:hover {
 
 .social-icons a:hover {
   color: black;
-  transition: 0.5s;
 }
 .top-header-content {
   display: flex;
   justify-content: space-between;
-  padding-top: 5px;
+  align-items: center;
+  padding-top: 4px;
 }
 
 .top-header-middle {
@@ -118,16 +118,18 @@ button:hover {
   border: 1px solid;
   border-radius: 5px;
   overflow: hidden;
+  transition: 0.5s;
 }
 .top-header-btn:hover {
   background-color: black;
-  transition: 0.5s;
 }
 .top-header-middle p,
 button {
   font-size: 13px;
 }
-
+.top-header-middle p {
+  margin-bottom: 0 !important;
+}
 .lang {
   color: white;
 }
@@ -149,22 +151,22 @@ button {
   height: auto;
   padding: 30px;
   z-index: 1007;
+  transition: 0.5s;
 }
 
 .language:hover .language-list {
   display: block;
   color: orangered;
   flex-direction: column;
-  transition: 0.5s;
 }
 
 .language-list .link-item {
   font-size: 18px;
   font-family: Outfit;
+  transition: 0.5s;
 }
 .language-list .link-item:hover {
   color: orangered;
-  transition: 0.5s;
 }
 
 .dropdown {
@@ -175,11 +177,11 @@ button {
   color: white;
   display: flex;
   display: inline-block;
+  transition: 0.5s;
 }
 
 .dropdown-icon i:hover {
   color: black;
-  transition: 0.5s;
 }
 /************** TOP HEADER  STYLE END***************/
 
@@ -323,13 +325,13 @@ ul {
 .nav-left .cart-icon {
   font-size: 20px;
   cursor: pointer;
+  transition: 0.5s;
 }
 
 .nav-left .search-icon:hover,
 .nav-left .user-icon:hover,
 .nav-left .cart-icon:hover {
   color: orangered;
-  transition: 0.5s;
 }
 
 .nav-left .cart {
@@ -367,11 +369,11 @@ a.active {
   height: auto;
   padding: 30px;
   z-index: 1006;
+  transition: 0.5s;
 }
 .dropdown:hover .dropdown-items {
   display: block;
   display: flex;
-  transition: 0.5s;
 }
 
 .dropdown-items-shop {
@@ -386,12 +388,12 @@ a.active {
   height: auto;
   padding: 30px;
   z-index: 1006;
+  transition: 0.5s;
 }
 .dropdown:hover .dropdown-items-shop {
   display: block;
   display: flex;
   justify-content: space-between;
-  transition: 0.5s;
 }
 
 .link-item {
@@ -613,7 +615,7 @@ body.modal-open {
   width: 65%;
   padding: 10px;
   margin-left: 20%;
-  z-index: 1004;
+  z-index: 1030;
   position: fixed;
   display: none;
   top: 110px;
@@ -723,6 +725,7 @@ body.modal-open {
 .search-star {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 .star {
   font-size: 12px;
@@ -760,7 +763,6 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /************** SWIPER SLIDER  HERO SECTION STYLE START     ******************/
 .swiper {
-  width: 100vw;
   height: calc(100vh - 120px);
 }
 
@@ -835,7 +837,9 @@ input[type="search"]::-webkit-search-cancel-button {
   height: 180px;
   margin: 0 auto;
 }
-
+.slick-slider {
+  z-index: 1010;
+}
 .banner-img img {
   width: 100%;
   height: 100%;
@@ -845,17 +849,17 @@ input[type="search"]::-webkit-search-cancel-button {
 .slick-next {
   background-color: orangered !important;
   color: white !important;
-
   align-items: center;
+  text-align: center;
+  transition: 0.5s;
+  z-index: 1015;
 }
 
 .slick-next:hover {
   background-color: black !important;
-  transition: 0.5s;
 }
 .slick-prev:hover {
   background-color: black !important;
-  transition: 0.5s;
 }
 
 .slick-prev {
@@ -1123,7 +1127,6 @@ input[type="search"]::-webkit-search-cancel-button {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
   height: 560px;
-  /* width: 315px; */
 }
 
 .product-items {
@@ -1141,6 +1144,7 @@ input[type="search"]::-webkit-search-cancel-button {
   overflow: hidden;
   position: relative;
   width: 100%;
+  height: 100%;
 }
 
 .products-images .product-image a.image {
@@ -1633,11 +1637,11 @@ footer {
   color: white;
   padding: 6px;
   border-radius: 5px;
+  transition: 0.5s;
 }
 
 .top-footer .social-links i:hover {
   background-color: black;
-  transition: 0.5s;
 }
 
 .top-footer ul {
