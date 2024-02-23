@@ -120,4 +120,30 @@ $(document).ready(function () {
       loader.remove();
     });
   });
+
+  // Handle click on quick view link
+  $(".quick-view").click(function (e) {
+    e.preventDefault();
+
+    var productCard = $(this).closest(".product-image");
+
+    var productImage = productCard.find(".pic-1").attr("src");
+
+    var productDetails = productCard.find(".content").html();
+
+    $(".quick-view-modal").data("product-details", productDetails);
+
+    var modalContent = '<div class="product-details">';
+    modalContent += '<img src="' + productImage + '" alt="Product Image">';
+    modalContent += '<div class="details">' + productDetails + "</div>";
+    modalContent += "</div>";
+
+    $(".quick-view-content").html(modalContent);
+
+    $(".quick-view-modal").fadeIn();
+  });
+
+  $(".quick-cross-btn").click(function () {
+    $(".quick-view-modal").fadeOut();
+  });
 });
