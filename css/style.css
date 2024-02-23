@@ -8,6 +8,7 @@
   box-sizing: border-box;
 }
 
+Html,
 body {
   font-family: "Comforta", sans-serif;
   line-height: 1.8;
@@ -297,6 +298,7 @@ nav .logo a {
 .nav .dropdown .shop-headline {
   color: black;
   font-weight: 700;
+  font-size: 20px;
 }
 
 .link-items {
@@ -749,6 +751,11 @@ body.modal-open {
   height: 65vh;
   margin-top: 40px;
 }
+
+input[type="search"]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
 /***************************** SEARCH MODAL STYLE END *************************/
 
 /************** SWIPER SLIDER  HERO SECTION STYLE START     ******************/
@@ -946,7 +953,7 @@ body.modal-open {
 
 .overlay .explore-btn1 {
   border-radius: 10px;
-  margin-left: 40%;
+  margin-left: 37%;
   letter-spacing: 2px;
   padding: 14px 20px;
   background-color: orangered;

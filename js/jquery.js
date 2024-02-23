@@ -23,11 +23,14 @@ $(document).ready(function () {
   $(".search-icon").on("click", function () {
     $(".search-modal").fadeIn();
     $(".search-modal-overlay").fadeIn();
+    document.body.style.overflow = "hidden";
   });
 
+  // ********* search hide modal  *********//
   $(".search-modal-cross, .search-modal-overlay").on("click", function () {
     $(".search-modal").fadeOut();
     $(".search-modal-overlay").fadeOut();
+    document.body.style.overflow = "auto";
   });
 
   // ********* nav toggle open   *********//
