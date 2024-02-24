@@ -932,6 +932,10 @@ input[type="search"]::-webkit-search-cancel-button {
   overflow: hidden;
 }
 
+.explore-btn {
+  text-align: center;
+  margin-top: 50%;
+}
 .overlay {
   position: absolute;
   bottom: 0;
@@ -946,14 +950,12 @@ input[type="search"]::-webkit-search-cancel-button {
 .overlay .explore-img-heading1 {
   color: white;
   font-size: 16px;
-  text-align: center;
   padding: 20px;
-  margin-top: 50%;
 }
 
 .overlay .explore-btn1 {
   border-radius: 10px;
-  margin-left: 36%;
+  text-align: center;
   letter-spacing: 2px;
   padding: 14px 20px;
   background-color: orangered;
@@ -970,14 +972,13 @@ input[type="search"]::-webkit-search-cancel-button {
 .overlay .explore-img-heading2 {
   color: white;
   font-size: 16px;
-  text-align: center;
   padding: 20px;
-  margin-top: 25%;
 }
-
+.explore-head2 {
+  margin-top: 20%;
+}
 .overlay .explore-btn2 {
   border-radius: 10px;
-  margin-left: 40%;
   letter-spacing: 2px;
   padding: 14px 20px;
   background-color: orangered;
@@ -992,14 +993,13 @@ input[type="search"]::-webkit-search-cancel-button {
 .overlay .explore-img-heading3 {
   color: white;
   font-size: 16px;
-  text-align: center;
+
   padding: 20px;
-  margin-top: 50%;
 }
 
 .overlay .explore-btn3 {
   border-radius: 10px;
-  margin-left: 30%;
+
   letter-spacing: 2px;
   padding: 14px 20px;
   background-color: orangered;
@@ -1015,14 +1015,13 @@ input[type="search"]::-webkit-search-cancel-button {
 .overlay .explore-img-heading4 {
   color: white;
   font-size: 16px;
-  text-align: center;
+
   padding: 20px;
-  margin-top: 50%;
 }
 
 .overlay .explore-btn4 {
   border-radius: 10px;
-  margin-left: 30%;
+
   letter-spacing: 2px;
   padding: 14px 20px;
   background-color: orangered;
@@ -1340,8 +1339,6 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /****************** PRODUCTS CARD STYLE END ******************/
-
-
 
 /******************* QUICK VIEW MODAL STYLE START***********************/
 .quick-view-modal {
