@@ -694,9 +694,8 @@ body.modal-open {
 
 .src-form .search-icon {
   position: absolute;
-  right: 40px;
-  top: 18px;
-  transform: translateY(-50%);
+  right: 0;
+  top: 0;
   cursor: pointer;
   height: 100%;
   background-color: orangered;
@@ -720,7 +719,7 @@ body.modal-open {
 .src-form input {
   border: 1px solid;
   padding: 3px 30px 3px 6px;
-  width: calc(100% - 40px);
+  width: 100%;
   border-radius: 5px;
 }
 
