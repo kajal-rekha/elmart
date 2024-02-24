@@ -189,8 +189,14 @@
   .nav-items .toggle-nav {
     display: block;
     font-size: 16px;
+    background-color: orangered;
+    color: white;
+    transition: 0.5s;
   }
 
+  .nav-items .toggle-nav:hover{
+    background-color: black;
+  }
   header .mobile-nav {
     display: block;
     position: fixed;

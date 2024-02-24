@@ -56,18 +56,6 @@ a {
 a:hover {
   color: black;
 }
-button {
-  padding: 10px 20px;
-  background-color: orangered;
-  color: white;
-  border-radius: 10px;
-  transition: 0.5s;
-}
-
-button:hover {
-  background-color: black;
-  color: white;
-}
 
 .wrapper {
   width: 95%;
@@ -84,14 +72,14 @@ button:hover {
 }
 
 .social-icons a {
-  font-size: 18px;
+  font-size: 16px;
   cursor: pointer;
   color: white;
   transition: 0.5s;
 }
 
 .social-icons .follow {
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .social-icons a:hover {
@@ -111,17 +99,22 @@ button:hover {
 .top-header-btn {
   display: flex;
   gap: 5px;
-  height: 28px;
+  height: 23px;
   padding: 0px 7px;
   color: white;
   background-color: transparent;
   border: 1px solid;
   border-radius: 5px;
   overflow: hidden;
+  align-items: center;
   transition: 0.5s;
 }
 .top-header-btn:hover {
   background-color: black;
+}
+
+.ttop-header-middle i {
+  font-size: 13px;
 }
 .top-header-middle p,
 button {
@@ -139,6 +132,10 @@ button {
 }
 .language {
   position: relative;
+}
+
+.language li a {
+  font-size: 13px;
 }
 .language-list {
   display: none;
@@ -161,7 +158,7 @@ button {
 }
 
 .language-list .link-item {
-  font-size: 16.5px;
+  font-size: 13px;
   font-family: Outfit;
   transition: 0.5s;
 }
@@ -176,6 +173,7 @@ button {
 .dropdown-icon i {
   color: white;
   display: flex;
+  font-size: 13px;
   display: inline-block;
   transition: 0.5s;
 }
@@ -666,6 +664,15 @@ body.modal-open {
   float: right;
   font-size: 16px;
   padding: 3px 10px;
+  background-color: orangered;
+  border-radius: 5px;
+  color: white;
+  transition: 0.5s;
+}
+
+.search-modal-cross:hover {
+  background-color: black;
+  transform: rotate(360deg);
 }
 
 .src-form {
@@ -676,8 +683,8 @@ body.modal-open {
 
 .src-form .search-icon {
   position: absolute;
-  right: 43px;
-  top: 50%;
+  right: 45px;
+  top: 20px;
   transform: translateY(-50%);
   cursor: pointer;
 }
@@ -736,7 +743,16 @@ body.modal-open {
 }
 
 .search-view {
-  font-size: 16px;
+  font-size: 14px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
+  transition: 0.5s;
+}
+
+.search-view:hover {
+  background-color: black;
 }
 
 .item-cross {
@@ -744,7 +760,12 @@ body.modal-open {
   margin-top: -120px;
   padding: 3px 12px;
   margin-right: 20px;
+  background-color: orangered;
+  color: white;
+  border-radius: 5px;
+  padding: 2px 5px;
 }
+
 .search-wrapper {
   height: 75vh;
 }
@@ -845,10 +866,9 @@ input[type="search"]::-webkit-search-cancel-button {
 .slick-next {
   background-color: orangered !important;
   color: white !important;
-  align-items: center;
-  text-align: center;
   transition: 0.5s;
   z-index: 1015;
+  border-radius: 50%;
 }
 
 .slick-next:hover {
@@ -873,6 +893,10 @@ input[type="search"]::-webkit-search-cancel-button {
   content: "\2039" !important;
 }
 
+.slick-next:before,
+.slick-prev:before {
+  line-height: 0.3 !important;
+}
 /******************** SLICK SLIDER BANNER END *************************/
 
 /******************** EXPLORE SECTION START *********************/
