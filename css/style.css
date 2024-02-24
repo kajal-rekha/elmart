@@ -820,10 +820,6 @@ input[type="search"]::-webkit-search-cancel-button {
   stroke: #ca2a05 !important;
 }
 
-.swiper-button-next {
-  margin-right: 12px !important;
-}
-
 /********* SWIPER SLIDER  HERO SECTION STYLE END *************/
 
 /******************** SLICK SLIDER BANNER START *************************/
@@ -957,7 +953,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .overlay .explore-btn1 {
   border-radius: 10px;
-  margin-left: 37%;
+  margin-left: 36%;
   letter-spacing: 2px;
   padding: 14px 20px;
   background-color: orangered;
@@ -1227,7 +1223,7 @@ input[type="search"]::-webkit-search-cancel-button {
   background-color: black;
 }
 .products-images:hover .cart {
-  bottom: 113px;
+  bottom: 125px;
 }
 
 .products-images .links {
@@ -1345,166 +1341,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /****************** PRODUCTS CARD STYLE END ******************/
 
-.testimonials {
-  margin-top: 80px;
-  margin-bottom: 120px;
-}
-.testimonials .testimonials-wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-}
-.testimonials .testimonials-heading {
-  margin-bottom: 80px;
-}
-.card {
-  border: none !important;
-}
-.testimonials .testimonials-heading p {
-  text-align: center;
-  font-family: "Courier New";
-  font-size: 18px;
-  margin-bottom: 5px;
-}
 
-.testimonials .testimonials-heading h3 {
-  font-size: 40px;
-  font-family: Outfit;
-  text-align: center;
-  margin-bottom: 28px;
-}
-.carousel-control-prev,
-.carousel-control-next {
-  display: none;
-}
-
-.testimonial-item {
-  width: 100%;
-  height: 100%;
-}
-
-.testimonial-content {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-  width: 100%;
-}
-
-.testimonial-img2 {
-  display: flex;
-  gap: 5px;
-}
-
-.testimonial-img1 {
-  display: flex;
-  gap: 5px;
-}
-.testimonial-image {
-  width: 50%;
-  height: 180px;
-  overflow: hidden;
-}
-
-.testimonial-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: 0.5s;
-}
-
-.testimonial-image img:hover {
-  transform: scale(1.1);
-}
-
-.testimonial-card {
-  background-color: #f5efef;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  height: 365px;
-  width: 100%;
-  box-shadow: 4px 34px 6px rgba(1, 1, 1, 0.7);
-
-  overflow: hidden;
-  position: relative;
-  z-index: 202;
-}
-
-.testimonial-card::before {
-  content: "";
-  width: 100px;
-  height: 100px;
-  background-color: orangered;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-bottom-right-radius: 100%;
-  z-index: 201;
-}
-
-.client-name {
-  display: flex;
-  gap: 10px;
-  margin-top: -10px;
-}
-
-.client-img {
-  width: 90px;
-  height: 90px;
-  z-index: 202;
-}
-
-.client-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.degi {
-  margin-top: 14px;
-}
-.degi h6 {
-  font-weight: 700;
-  font-size: 15px;
-  text-transform: uppercase;
-  font-family: Urbanist;
-}
-
-.degi p {
-  font-size: 14px;
-  font-family: Outfit;
-}
-.carousel-indicators [data-bs-target] {
-  background-color: orangered;
-  border-radius: 50%;
-  width: 10px;
-  height: 10px;
-  margin: 0 5px;
-  border: none;
-}
-
-.carousel-indicators {
-  margin-bottom: -1.2rem !important;
-}
-
-.qua-up {
-  font-size: 80px;
-  margin-bottom: -75px;
-  color: orangered;
-}
-
-.client-star {
-  color: orangered;
-  font-size: 13px;
-  margin-top: -12px;
-}
-
-.client-speach {
-  max-width: 95%;
-  font-family: Outfit;
-  font-size: 17px;
-}
 
 /******************* QUICK VIEW MODAL STYLE START***********************/
 .quick-view-modal {
