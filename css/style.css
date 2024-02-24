@@ -1502,7 +1502,7 @@ footer {
 .footer-content .home-address {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 7px;
 }
 .home p {
   margin-bottom: 0 !important;
