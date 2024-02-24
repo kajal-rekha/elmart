@@ -295,6 +295,17 @@ nav .logo a {
   gap: 3px;
 }
 
+.dropdown-list .shop-headline a {
+  font-size: 18px;
+}
+.dropdown-list {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.dropdown-list li a {
+  font-size: 17px;
+}
 .nav .dropdown .shop-headline {
   color: black;
   font-weight: 700;
@@ -303,7 +314,7 @@ nav .logo a {
 
 .link-items {
   display: flex;
-  gap: 20px;
+  gap: 30px;
   align-items: center;
 }
 
@@ -439,7 +450,7 @@ a.active {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
   transform: translateX(100%);
-  z-index: 1001;
+  z-index: 10000;
 }
 
 .cart-modal.show {
@@ -683,10 +694,15 @@ body.modal-open {
 
 .src-form .search-icon {
   position: absolute;
-  right: 45px;
-  top: 20px;
+  right: 40px;
+  top: 18px;
   transform: translateY(-50%);
   cursor: pointer;
+  height: 100%;
+  background-color: orangered;
+  color: white;
+  width: 35px;
+  border-radius: 0px 2px;
 }
 
 .src-form .cross-icon {
@@ -697,7 +713,6 @@ body.modal-open {
   cursor: pointer;
 }
 
-.src-form .search-icon:hover,
 .src-form .cross-icon:hover {
   color: orangered;
 }
@@ -1348,6 +1363,9 @@ input[type="search"]::-webkit-search-cancel-button {
   background: orangered;
 }
 
+.owl-carousel .owl-stage-outer {
+  padding: 15px 0px !important;
+}
 .products .product-heading p {
   text-align: center;
   font-family: "Courier New";
@@ -1482,6 +1500,28 @@ footer {
   text-transform: uppercase;
 }
 
+.footer-content .home-address {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.home p {
+  margin-bottom: 0 !important;
+}
+.home {
+  display: flex;
+  gap: 6px;
+}
+.phone {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.email {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
 .top-footer .logo span {
   color: orangered;
 }
