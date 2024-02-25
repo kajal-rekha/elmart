@@ -1521,6 +1521,11 @@ footer {
   gap: 6px;
   align-items: center;
 }
+.home i,
+.phone i,
+.email i {
+  color: orangered;
+}
 .top-footer .logo span {
   color: orangered;
 }
@@ -1529,8 +1534,10 @@ footer {
   color: black;
 }
 
-.top-footer .social-links{
+.top-footer .social-links {
   margin-top: 20px;
+  display: flex;
+  gap: 14px;
 }
 .top-footer .social-links i {
   background-color: orangered;
