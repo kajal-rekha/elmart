@@ -2,11 +2,15 @@ $(document).ready(function () {
   // ********* top header open modal  *********//
   $(".top-header-btn").on("click", function () {
     $(".modal").fadeIn(1000);
+
+    $("body").css("overflow", "hidden");
   });
 
   //********* top header close modal  **********//
   $(".cross-btn").on("click", function () {
     $(".modal").fadeOut(1000);
+
+    $("body").css("overflow", "auto");
   });
 
   // ********* cart open modal  *********//
