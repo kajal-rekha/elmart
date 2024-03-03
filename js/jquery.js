@@ -153,4 +153,9 @@ $(document).ready(function () {
   $(".quick-cross-btn").click(function () {
     $(".quick-view-modal").fadeOut();
   });
+
+  $(".min-price-range").on("input", function () {
+    var val = parseInt($(this).val());
+    $(".min-number").val(val);
+  });
 });

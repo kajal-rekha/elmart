@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="../assets/fontawsome/all.min.css" />
+    <link rel="stylesheet" href="../assets/fontawsome/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <div class="loader"></div>
+    <div id="navbar"></div>
+
+    <main>
+      <section id="shop" class="shop">
+        <div class="wrapper">
+          <!-- SHOP HEADER START -->
+          <div class="shop-wrapper">
+            <div class="shop-header">
+              <div class="shop-header-content">
+                <h2 class="shop-title">Shop</h2>
+                <div class="shop-home">
+                  <ul class="shop-items">
+                    <li class="shop-item1">
+                      <span class="home-icon"
+                        ><i class="fa-solid fa-house-chimney"></i
+                      ></span>
+                      <a href="./"> Home</a>
+                    </li>
+
+                    <li class="shop-item2"><a href="./"> Shop</a></li>
+                    <li class="shop-item2"><a href="./">Category</a></li>
+                  </ul>
+
+                  <div class="shop-search-bar">
+                    <form>
+                      <span class="shop-search-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                      </span>
+                      <div class="shop-input">
+                        <input
+                          type="search"
+                          id="shop-search"
+                          placeholder="Search your favourite items"
+                        />
+                        <button type="submit">Search</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="tags-list">
+                  <ul>
+                    <li>
+                      <span><i class="fa-solid fa-xmark"></i></span
+                      ><a href="./">Glamour</a>
+                    </li>
+                    <li>
+                      <span><i class="fa-solid fa-xmark"></i></span
+                      ><a href="./">Beauty</a>
+                    </li>
+                    <li>
+                      <span><i class="fa-solid fa-xmark"></i></span
+                      ><a href="./">Skincare</a>
+                    </li>
+                    <li>
+                      <span><i class="fa-solid fa-xmark"></i></span
+                      ><a href="./">BeautyTips</a>
+                    </li>
+                    <li>
+                      <span><i class="fa-solid fa-xmark"></i></span
+                      ><a href="./">Makeup</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- SHOP HEADER END -->
+
+          <!-- SHOP PRODUCTS AREA START -->
+          <div class="shop-products-area">
+            <div class="side-wrapper">
+              <span class="side-bar-close-icon"
+                ><i class="fa-solid fa-minus"></i
+              ></span>
+              <div class="side-bar-title">
+                <h2>Filter</h2>
+                <button type="reset">Clear</button>
+              </div>
+
+              <div class="shop-category">
+                <h2 class="category-title">Category</h2>
+                <div class="category-wrapper">
+                  <div class="single-category">
+                    <input type="checkbox" id="category1" />
+                    <label for="category1">Makeup</label>
+                  </div>
+                  <div class="single-category">
+                    <input type="checkbox" id="category2" />
+                    <label for="category2">SkinCare</label>
+                  </div>
+                  <div class="single-category">
+                    <input type="checkbox" id="category3" />
+                    <label for="category3">HairCare</label>
+                  </div>
+                  <div class="single-category">
+                    <input type="checkbox" id="category4" />
+                    <label for="category4">Bath & Body</label>
+                  </div>
+                  <div class="single-category">
+                    <input type="checkbox" id="category5" />
+                    <label for="category5">Nailpolish</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="filter-price">
+                <div class="filter-price-heading">
+                  <h2 class="price-title">Price</h2>
+                  <button>Filter</button>
+                </div>
+
+                <div class="price-inputs">
+                  <div class="price-input">
+                    <span>$</span>
+                    <input
+                      type="number"
+                      name="number"
+                      value="0"
+                      min="0"
+                      max="5000"
+                      class="min-number"
+                    />
+                  </div>
+                  <div class="price-minus">–</div>
+
+                  <div class="price-input">
+                    <span>$</span>
+                    <input
+                      type="number"
+                      name="number"
+                      value="5000"
+                      min="0"
+                      max="5000"
+                      class="max-number"
+                    />
+                  </div>
+                </div>
+
+                <div class="price-ranges">
+                  <div class="range">
+                    <input
+                      type="range"
+                      name="range"
+                      min="0"
+                      max="5000"
+                      value="0"
+                      class="min-price-range"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="exclusive-products">
+                <h2 class="exclusive-title">Exclusive Products</h2>
+                <div class="exclusive-products-wrapper">
+                  <div class="exclusive-product">
+                    <div class="exclusive-img">
+                      <img
+                        src="../assets/images/image1.webp"
+                        alt="exclusive image"
+                      />
+                    </div>
+                    <div class="exclusive-info">
+                      <div class="exclusive-ratings">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <h3 class="exclusive-product-title">
+                        Eyeshadow Palette!
+                      </h3>
+                      <p class="exclusive-product-price">$200</p>
+                    </div>
+                  </div>
+                  <div class="exclusive-product">
+                    <div class="exclusive-img">
+                      <img
+                        src="../assets/images/image16.webp"
+                        alt="exclusive image"
+                      />
+                    </div>
+                    <div class="exclusive-info">
+                      <div class="exclusive-ratings">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <h3 class="exclusive-product-title">Pigment Lipstics!</h3>
+                      <p class="exclusive-product-price">$100</p>
+                    </div>
+                  </div>
+                  <div class="exclusive-product">
+                    <div class="exclusive-img">
+                      <img
+                        src="../assets/images/image3.webp"
+                        alt="exclusive image"
+                      />
+                    </div>
+                    <div class="exclusive-info">
+                      <div class="exclusive-ratings">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <h3 class="exclusive-product-title">Boosting Serum!</h3>
+                      <p class="exclusive-product-price">$150</p>
+                    </div>
+                  </div>
+                  <div class="exclusive-product">
+                    <div class="exclusive-img">
+                      <img
+                        src="../assets/images/image9.webp"
+                        alt="exclusive image"
+                      />
+                    </div>
+                    <div class="exclusive-info">
+                      <div class="exclusive-ratings">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+
+                      <h3 class="exclusive-product-title">Body Lotion!</h3>
+                      <p class="exclusive-product-price">$200</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tags">
+                <h3>Tags</h3>
+
+                <div class="tags-wrapper">
+                  <div class="single-tag">
+                    <input type="checkbox" id="tag1" />
+                    <label for="tag1">Natural beauty</label>
+                  </div>
+                  <div class="single-tag">
+                    <input type="checkbox" id="tag2" />
+                    <label for="tag2">Beauty</label>
+                  </div>
+                  <div class="single-tag">
+                    <input type="checkbox" id="tag3" />
+                    <label for="tag3">Cosmetic trends</label>
+                  </div>
+                  <div class="single-tag4">
+                    <input type="checkbox" id="tag4" />
+                    <label for="tag4">Natural beauty</label>
+                  </div>
+                  <div class="single-tag5">
+                    <input type="checkbox" id="tag5" />
+                    <label for="tag5">Glamour</label>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="products-wrapper">
+              <div class="products-wrapper-header">
+                <div class="product-header-left">
+                  <span class="sidebar-show"
+                    ><i class="fa fa-ellipsis-h" aria-hidden="true"></i
+                  ></span>
+
+                  <p class="mb-0">
+                    Showing <span class="show-item">10</span> of
+                    <span class="total-item">25</span> result
+                  </p>
+
+                  <div class="shop-product-view">
+                    <div class="shop-list-view">
+                      <span><i class="fa-solid fa-grip-lines"></i></span>
+                    </div>
+
+                    <div class="shop-grid2-view">
+                      <span
+                        ><i class="fa-solid fa-grip-lines-vertical"></i
+                      ></span>
+                    </div>
+
+                    <div class="shop-grid3-view">
+                      <span><i class="fa-solid fa-table-cells"></i></span>
+                    </div>
+
+                    <div class="shop-grid4-view">
+                      <span><i class="fa-solid fa-grip"></i></span>
+                    </div>
+
+                    <div class="shop-grid5-view">
+                      <span><i class="fa-solid fa-border-none"></i></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-header-right">
+                  <div>
+                    <input
+                      type="checkbox"
+                      name="show-product"
+                      id="show-product"
+                    />
+                    <label for="show-product">Show Shop product </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- SHOP PRODUCTS AREA END -->
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script>
+      // Fetch and insert navbar
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("navbar").innerHTML = data))
+        .catch((error) => console.error("Error fetching navbar:", error));
+
+      // Fetch and insert footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data))
+        .catch((error) => console.error("Error fetching footer:", error));
+    </script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/app.js" defer></script>
+  </body>
+</html>
