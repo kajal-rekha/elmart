@@ -158,4 +158,36 @@ $(document).ready(function () {
     var val = parseInt($(this).val());
     $(".min-number").val(val);
   });
+
+  $(".side-bar-close-icon").click(function () {
+    $(".side-wrapper").addClass("hide");
+    $(".sidebar-show").css("display", "block");
+    $(".shop-products-area").addClass("side-wrapper-hidden");
+  });
+
+  $(".sidebar-show").click(function () {
+    $(".side-wrapper").removeClass("hide");
+    $(".sidebar-show").css("display", "none");
+    $(".shop-products-area").removeClass("side-wrapper-hidden");
+  });
+
+  // grid view
+  $("#grid-active-btn").click(function (event) {
+    event.preventDefault();
+    $(".shop-products-card").removeClass("details-active");
+    $(this).addClass("active");
+    $("#details-active-btn").removeClass("active");
+  });
+
+  $("#details-active-btn").click(function (event) {
+    event.preventDefault();
+    $(".shop-products-card").addClass("details-active");
+    $(this).addClass("active");
+    $("#grid-active-btn").removeClass("active");
+  });
+
+  $(".shop-page").click(function () {
+    var page = $(this).text();
+    $(".shop-total-page span:first-child").text(page);
+  });
 });

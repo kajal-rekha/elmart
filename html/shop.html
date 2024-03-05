@@ -7,6 +7,8 @@
     <title>Shop Page</title>
     <link rel="stylesheet" href="../assets/fontawsome/all.min.css" />
     <link rel="stylesheet" href="../assets/fontawsome/fontawesome.min.css" />
+
+    <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
@@ -64,10 +66,7 @@
                       <span><i class="fa-solid fa-xmark"></i></span
                       ><a href="./">Skincare</a>
                     </li>
-                    <li>
-                      <span><i class="fa-solid fa-xmark"></i></span
-                      ><a href="./">BeautyTips</a>
-                    </li>
+
                     <li>
                       <span><i class="fa-solid fa-xmark"></i></span
                       ><a href="./">Makeup</a>
@@ -280,53 +279,871 @@
             </div>
 
             <div class="products-wrapper">
+              <!-- shop products header start -->
               <div class="products-wrapper-header">
                 <div class="product-header-left">
                   <span class="sidebar-show"
                     ><i class="fa fa-ellipsis-h" aria-hidden="true"></i
                   ></span>
 
-                  <p class="mb-0">
+                  <p class="showing">
                     Showing <span class="show-item">10</span> of
                     <span class="total-item">25</span> result
                   </p>
 
                   <div class="shop-product-view">
-                    <div class="shop-list-view">
-                      <span><i class="fa-solid fa-grip-lines"></i></span>
-                    </div>
-
-                    <div class="shop-grid2-view">
-                      <span
-                        ><i class="fa-solid fa-grip-lines-vertical"></i
-                      ></span>
-                    </div>
-
-                    <div class="shop-grid3-view">
-                      <span><i class="fa-solid fa-table-cells"></i></span>
-                    </div>
-
-                    <div class="shop-grid4-view">
-                      <span><i class="fa-solid fa-grip"></i></span>
-                    </div>
-
-                    <div class="shop-grid5-view">
-                      <span><i class="fa-solid fa-border-none"></i></span>
+                    <div class="display-style-btns">
+                      <button type="button" id="grid-active-btn">
+                        <i class="fas fa-th"></i>
+                      </button>
+                      <button type="button" id="details-active-btn">
+                        <i class="fas fa-list-ul"></i>
+                      </button>
                     </div>
                   </div>
                 </div>
                 <div class="product-header-right">
-                  <div>
-                    <input
-                      type="checkbox"
-                      name="show-product"
-                      id="show-product"
-                    />
-                    <label for="show-product">Show Shop product </label>
+                  <div class="show-page">
+                    <p>Show:</p>
+                    <span>20<i class="fas fa-chevron-down"></i></span>
+                  </div>
+
+                  <div class="show-list">
+                    <ul>
+                      <li>10</li>
+                      <li>15</li>
+                      <li>20</li>
+                      <li>30</li>
+                    </ul>
+                  </div>
+
+                  <div class="sort">
+                    <p>Sort by Date</p>
+                    <span><i class="fas fa-chevron-down"></i></span>
+                  </div>
+                </div>
+              </div>
+              <!-- shop products header end -->
+
+              <div id="products" class="products">
+                <div class="product-items">
+                  <div class="products-card shop-products-card">
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image1.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image2.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#">Skincare </a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Eyeshadow !</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.400.00</span> Rs.350.00
+                          </div>
+                          <p>
+                            Discover our range of luxurious foundations that
+                            offer seamless coverage and a flawless finish for
+                            all skin types.
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image3.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image4.jpeg"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"><a href="#">Haircare</a></span>
+                          <h3 class="title shop-product-title">
+                            <a href="#">Boosting Serum!</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.550.00</span>Rs.450.00
+                          </div>
+                          <p>
+                            Add a touch of radiance to your cheeks with our
+                            collection of blushes, available in an array of
+                            flattering shades .
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image5.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image6.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">New</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"><a href="#">Makeup </a></span>
+                          <h3 class="title shop-product-title">
+                            <a href="#">Body Lotion!</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.350.00</span>Rs.280.00
+                          </div>
+                          <p>
+                            Make a statement with our vibrant lipsticks,
+                            formulated with rich pigments and nourishing
+                            ingredients.
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image7.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image8.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">New</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#">Nail Polish </a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#">Nail Polish!</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.530.00</span>Rs.400.00
+                          </div>
+                          <p>
+                            Nourish your skin with our hydrating moisturizers,
+                            designed to replenish moisture and leave your skin .
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image9.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image10.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#"> Hair Oil</a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Hair Oils!</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.6.00</span>Rs.450.00
+                          </div>
+                          <p>
+                            Transform your skincare routine with our
+                            revitalizing serums, packed with potent antioxidants
+                            and vitamins .
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image11.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image12.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#">Radiant Serums </a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#">Boosting Serum!</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.530.00</span>Rs.430.00
+                          </div>
+                          <p>
+                            Banish dark circles and puffiness with our soothing
+                            eye creams, specially formulated to brighten .
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image13.jpeg"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image14.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#"> Organic Beauty </a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Facial Mists</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.300.00</span>Rs.200.00
+                          </div>
+                          <p>
+                            Achieve a luminous complexion with our glow-boosting
+                            highlighters, infused with light-reflecting
+                            pigments.
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image15.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image16.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#"> Body Treats</a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Lipstics!</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.380.00</span>Rs.290.00
+                          </div>
+                          <p>
+                            Get lashes that command attention with our
+                            long-lasting mascara, formulated to lengthen,
+                            volumize.
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image15.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image16.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#"> Body Treats</a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Lipstics!</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.380.00</span>Rs.290.00
+                          </div>
+                          <p>
+                            Experience the power of gentle cleansing with our
+                            nourishing cleansing oils, designed to dissolve
+                            makeup .
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image15.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image16.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#"> Body Treats</a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Lipstics!</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.380.00</span>Rs.290.00
+                          </div>
+                          <p>
+                            Define and sculpt your brows with our range of brow
+                            products, including pencils,your desired look with
+                            ease.
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image1.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image2.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#">Skincare </a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Eyeshadow !</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.400.00</span> Rs.350.00
+                          </div>
+                          <p>
+                            Treat yourself to a spa-like experience with our
+                            soothing face masks, enriched to pamper and
+                            rejuvenate your skin.
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image1.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image2.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#">Skincare </a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Eyeshadow !</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.400.00</span> Rs.350.00
+                          </div>
+                          <p>
+                            Reveal smoother, softer skin with our invigorating
+                            body scrubs, to slough away dead skin cells and
+                            leave your body .
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image1.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image2.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#">Skincare </a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Eyeshadow !</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.400.00</span> Rs.350.00
+                          </div>
+                          <p>
+                            Indulge your senses with our fragrant body lotions,
+                            infused with nourishing ingredients to hydrate and
+                            pamper your skin.
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image1.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image2.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category"
+                            ><a href="#">Skincare </a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Eyeshadow !</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.400.00</span> Rs.350.00
+                          </div>
+                          <p>
+                            Restore vitality to your locks with our nourishing
+                            hair masks, enriched with natural oils and proteins
+                            to repair damage .
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="products-images shop-products-images">
+                      <div class="product-image shop-product-image">
+                        <a href="#" class="image wow fadeInUp">
+                          <img
+                            src="../assets/images/image1.webp"
+                            alt="product image"
+                            class="pic-1"
+                          />
+
+                          <img
+                            src="../assets/images/image2.webp"
+                            alt="product image"
+                            class="pic-2"
+                          />
+                        </a>
+
+                        <span class="discount shop-discount">Sale</span>
+
+                        <div class="links shop-quick-links">
+                          <ul>
+                            <li class="quick-view">
+                              <a href="#"
+                                ><i class="fa fa-heart" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                            <li>
+                              <a href="#search-modal"
+                                ><i class="fa fa-search" aria-hidden="true"></i
+                              ></a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="content wow fadeInUp shop-content">
+                          <span class="category shop-category"
+                            ><a href="#">Skincare </a></span
+                          >
+                          <h3 class="title shop-product-title">
+                            <a href="#"> Eyeshadow !</a>
+                          </h3>
+                          <div class="price shop-price">
+                            <span>Rs.400.00</span> Rs.350.00
+                          </div>
+                          <p>
+                            Control shine and minimize pores with our mattifying
+                            powders, perfect for setting makeup and fresh and
+                            flawless all day.
+                          </p>
+                          <a href="#cart" class="add-cart cart">Add To Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shop-pagination">
+                    <div class="shop-pagination-wrapper">
+                      <div class="shop-pagination-number">
+                        <span
+                          ><i
+                            class="fa fa-angle-left"
+                            aria-hidden="true"
+                            class="shop-active"
+                          ></i
+                        ></span>
+                        <span class="shop-page">1</span>
+                        <span class="shop-page">2</span>
+                        <span class="shop-page">3</span>
+                        <span class="shop-page">4</span>
+                        <span class="shop-page">5</span>
+                        <span>
+                          <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </span>
+                      </div>
+
+                      <div class="shop-total-page">
+                        <p>Page: <span>2</span> of <span>5</span></p>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+          </div>
+
+          <!--========= Quick view modal ============-->
+          <div class="quick-view-modal wrapper">
+            <div class="quick-view-content"></div>
+            <span class="quick-cross-btn"><i class="fa fa-times"></i></span>
           </div>
 
           <!-- SHOP PRODUCTS AREA END -->
@@ -351,6 +1168,6 @@
     </script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.js"></script>
-    <script src="../js/app.js" defer></script>
+    <script src="../js/app.js"></script>
   </body>
 </html>
