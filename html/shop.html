@@ -7,6 +7,7 @@
     <title>Shop Page</title>
     <link rel="stylesheet" href="../assets/fontawsome/all.min.css" />
     <link rel="stylesheet" href="../assets/fontawsome/fontawesome.min.css" />
+    <link rel="stylesheet" href="../css/animate.css" />
     <link rel="stylesheet" href="../css/shop.css" />
   </head>
   <body>
@@ -21,9 +22,9 @@
           <div class="shop-wrapper">
             <div class="shop-header">
               <div class="shop-header-content">
-                <h2 class="shop-title">Shop</h2>
+                <h2 class="shop-title wow fadeInDown">Shop</h2>
                 <div class="shop-home">
-                  <ul class="shop-items">
+                  <ul class="shop-items wow slideInLeft">
                     <li class="shop-item1">
                       <span class="home-icon"
                         ><i class="fa-solid fa-house-chimney"></i
@@ -36,7 +37,7 @@
                   </ul>
 
                   <div class="shop-search-bar">
-                    <form>
+                    <form class="wow slideInRight">
                       <span class="shop-search-icon">
                         <i class="fa-solid fa-magnifying-glass"></i>
                       </span>
@@ -52,7 +53,7 @@
                   </div>
                 </div>
                 <div class="tags-list">
-                  <ul>
+                  <ul class="wow fadeInUp">
                     <li>
                       <a href="./">Glamour</a>
                     </li>
@@ -76,15 +77,15 @@
           <!-- SHOP PRODUCTS AREA START -->
           <div class="shop-products-area">
             <div class="side-wrapper">
-              <span class="side-bar-close-icon"
+              <span class="side-bar-close-icon wow fadeInDown"
                 ><i class="fa-solid fa-minus"></i
               ></span>
               <div class="side-bar-title">
-                <h2>Filter</h2>
-                <button type="reset">Clear</button>
+                <h2 class="wow slideInLeft">Filter</h2>
+                <button type="reset" class="wow fadeInDown">Clear</button>
               </div>
 
-              <div class="shop-category">
+              <div class="shop-category wow slideInLeft">
                 <h2 class="category-title">Category</h2>
                 <div class="category-wrapper">
                   <div class="single-category">
@@ -112,11 +113,11 @@
 
               <div class="filter-price">
                 <div class="filter-price-heading">
-                  <h2 class="price-title">Price</h2>
-                  <button>Filter</button>
+                  <h2 class="price-title wow slideInLeft">Price</h2>
+                  <button class="wow fadeInDown">Filter</button>
                 </div>
 
-                <div class="price-inputs">
+                <div class="price-inputs wow slideInLeft">
                   <div class="price-input">
                     <span>$</span>
                     <input
@@ -143,7 +144,7 @@
                   </div>
                 </div>
 
-                <div class="price-ranges">
+                <div class="price-ranges wow slideInLeft">
                   <div class="range">
                     <input
                       type="range"
@@ -158,16 +159,19 @@
               </div>
 
               <div class="exclusive-products">
-                <h2 class="exclusive-title">Exclusive Products</h2>
+                <h2 class="exclusive-title wow slideInLeft">
+                  Exclusive Products
+                </h2>
                 <div class="exclusive-products-wrapper">
                   <div class="exclusive-product">
                     <div class="exclusive-img">
                       <img
                         src="../assets/images/image1.webp"
                         alt="exclusive image"
+                        class="wow slideInLeft"
                       />
                     </div>
-                    <div class="exclusive-info">
+                    <div class="exclusive-info wow fadeInUp">
                       <h3 class="exclusive-product-title">
                         <a href="/products"> Eyeshadow</a>
                       </h3>
@@ -187,9 +191,10 @@
                       <img
                         src="../assets/images/image16.webp"
                         alt="exclusive image"
+                        class="wow slideInLeft"
                       />
                     </div>
-                    <div class="exclusive-info">
+                    <div class="exclusive-info wow fadeInUp">
                       <h3 class="exclusive-product-title">
                         <a href="/products">Pigment Lipstics!</a>
                       </h3>
@@ -209,9 +214,10 @@
                       <img
                         src="../assets/images/image3.webp"
                         alt="exclusive image"
+                        class="wow slideInLeft"
                       />
                     </div>
-                    <div class="exclusive-info">
+                    <div class="exclusive-info wow fadeInUp">
                       <h3 class="exclusive-product-title">
                         <a href="/products">Boosting Serum!</a>
                       </h3>
@@ -231,9 +237,10 @@
                       <img
                         src="../assets/images/image9.webp"
                         alt="exclusive image"
+                        class="wow slideInLeft"
                       />
                     </div>
-                    <div class="exclusive-info">
+                    <div class="exclusive-info wow fadeInUp">
                       <h3 class="exclusive-product-title">
                         <a href="/products">Body Lotion!</a>
                       </h3>
@@ -251,7 +258,7 @@
                 </div>
               </div>
 
-              <div class="tags">
+              <div class="tags wow slideInLeft">
                 <h3>Tags</h3>
 
                 <div class="tags-wrapper">
@@ -282,7 +289,7 @@
             <div class="products-wrapper">
               <!-- shop products header start -->
               <div class="products-wrapper-header">
-                <div class="product-header-left">
+                <div class="product-header-left wow fadeInDown">
                   <span class="sidebar-show"
                     ><i class="fa fa-ellipsis-h" aria-hidden="true"></i
                   ></span>
@@ -303,7 +310,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-header-right">
+                <div class="product-header-right wow slideInRight">
                   <div class="show-page">
                     <p>Show:</p>
                     <span>20<i class="fas fa-chevron-down"></i></span>
@@ -328,14 +335,14 @@
 
               <div id="products" class="products">
                 <div class="shop-products-card">
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img1.avif"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -347,11 +354,11 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img2.png"
@@ -370,18 +377,18 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img4.avif"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -398,14 +405,14 @@
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img13.webp"
                         alt="shop image"
                       />
                     </div>
-                  <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -417,19 +424,19 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                      <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img12.webp"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -441,12 +448,12 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img11.webp"
@@ -470,14 +477,14 @@
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img8.webp"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -489,12 +496,12 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img9.webp"
@@ -513,19 +520,19 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img10.webp"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -537,19 +544,19 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img5.webp"
                         alt="shop image"
                       />
                     </div>
-                    <<div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -561,19 +568,19 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                      <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img6.webp"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -585,19 +592,19 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img7.png"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -609,19 +616,19 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
 
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img14.webp"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -633,18 +640,18 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img15.png"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -656,11 +663,11 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img16.webp"
@@ -679,11 +686,11 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img17.png"
@@ -702,11 +709,11 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img19.webp"
@@ -725,110 +732,18 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img20.png"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
-                      <span>Makeup</span>
-                      <div class="shop-star">
-                        <i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i>
-                      </div>
-                      <h3><a href="./products">Eternal Lipstcics</a></h3>
-
-                      <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="shop-product-img">
-                    <div class="shop-img">
-                      <img
-                        src="../assets/images/shop-img21.png"
-                        alt="shop image"
-                      />
-                    </div>
-                   <div class="shop-contents">
-                      <span>Makeup</span>
-                      <div class="shop-star">
-                        <i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i>
-                      </div>
-                      <h3><a href="./products">Eternal Lipstcics</a></h3>
-
-                      <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="shop-product-img">
-                    <div class="shop-img">
-                      <img
-                        src="../assets/images/shop-img21.webp"
-                        alt="shop image"
-                      />
-                    </div>
-                   <div class="shop-contents">
-                      <span>Makeup</span>
-                      <div class="shop-star">
-                        <i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i>
-                      </div>
-                      <h3><a href="./products">Eternal Lipstcics</a></h3>
-
-                      <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="shop-product-img">
-                    <div class="shop-img">
-                      <img
-                        src="../assets/images/shop-img22.png"
-                        alt="shop image"
-                      />
-                    </div>
-                   <div class="shop-contents">
-                      <span>Makeup</span>
-                      <div class="shop-star">
-                        <i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i
-                        ><i class="fa-solid fa-star"></i>
-                      </div>
-                      <h3><a href="./products">Eternal Lipstcics</a></h3>
-
-                      <div class="shop-cart">
-                      <a href="./product.html">View Details</a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="shop-product-img">
-                    <div class="shop-img">
-                      <img
-                        src="../assets/images/shop-img23.webp"
-                        alt="shop image"
-                      />
-                    </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -844,14 +759,106 @@
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
+                    <div class="shop-img">
+                      <img
+                        src="../assets/images/shop-img21.png"
+                        alt="shop image"
+                      />
+                    </div>
+                    <div class="shop-contents">
+                      <span>Makeup</span>
+                      <div class="shop-star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <h3><a href="./products">Eternal Lipstcics</a></h3>
+
+                      <div class="shop-cart">
+                        <a href="./product.html">View Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shop-product-img wow fadeInUp">
+                    <div class="shop-img">
+                      <img
+                        src="../assets/images/shop-img21.webp"
+                        alt="shop image"
+                      />
+                    </div>
+                    <div class="shop-contents">
+                      <span>Makeup</span>
+                      <div class="shop-star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <h3><a href="./products">Eternal Lipstcics</a></h3>
+
+                      <div class="shop-cart">
+                        <a href="./product.html">View Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shop-product-img wow fadeInUp">
+                    <div class="shop-img">
+                      <img
+                        src="../assets/images/shop-img22.png"
+                        alt="shop image"
+                      />
+                    </div>
+                    <div class="shop-contents">
+                      <span>Makeup</span>
+                      <div class="shop-star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <h3><a href="./products">Eternal Lipstcics</a></h3>
+
+                      <div class="shop-cart">
+                        <a href="./product.html">View Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shop-product-img wow fadeInUp">
+                    <div class="shop-img">
+                      <img
+                        src="../assets/images/shop-img23.webp"
+                        alt="shop image"
+                      />
+                    </div>
+                    <div class="shop-contents">
+                      <span>Makeup</span>
+                      <div class="shop-star">
+                        <i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i>
+                      </div>
+                      <h3><a href="./products">Eternal Lipstcics</a></h3>
+
+                      <div class="shop-cart">
+                        <a href="./product.html">View Details</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img24.png"
                         alt="shop image"
                       />
                     </div>
-                  <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -863,18 +870,18 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                      <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img25.png"
                         alt="shop image"
                       />
                     </div>
-                   <div class="shop-contents">
+                    <div class="shop-contents">
                       <span>Makeup</span>
                       <div class="shop-star">
                         <i class="fa-solid fa-star"></i
@@ -886,11 +893,11 @@
                       <h3><a href="./products">Eternal Lipstcics</a></h3>
 
                       <div class="shop-cart">
-                       <a href="./product.html">View Details</a>
+                        <a href="./product.html">View Details</a>
                       </div>
                     </div>
                   </div>
-                  <div class="shop-product-img">
+                  <div class="shop-product-img wow fadeInUp">
                     <div class="shop-img">
                       <img
                         src="../assets/images/shop-img26.webp"
@@ -969,8 +976,10 @@
         .then((data) => (document.getElementById("footer").innerHTML = data))
         .catch((error) => console.error("Error fetching footer:", error));
     </script>
+
+    <script src="../js/wow.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.js"></script>
-    <script src="../js/app.js"></script>
+    <script src="../js/app.js" defer></script>
   </body>
 </html>
