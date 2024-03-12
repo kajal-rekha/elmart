@@ -2,7 +2,10 @@
   position: relative;
   overflow: hidden;
   margin-bottom: 10%;
-  height: 95vh;
+}
+
+.testimonials {
+  margin-bottom: 40px;
 }
 
 .testimonial-slider .testimonials-wrapper {
@@ -17,7 +20,7 @@
 
 .testimonial-slider .swiper-pagination {
   position: absolute;
-  bottom: 0px;
+  bottom: -5px;
   left: 50%;
   transform: translateX(-50%);
 }
