@@ -6,9 +6,7 @@
 }
 
 .testimonial-slider .testimonials-wrapper {
-  padding: 20px;
   border-radius: 10px;
-  margin-top: -50px;
   overflow: hidden;
 }
 
@@ -52,11 +50,10 @@
 
 .testimonial-card {
   background-color: #f5e9e9;
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  height: 360px;
-  width: 70%;
+
   box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
   overflow: hidden;

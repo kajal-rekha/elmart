@@ -190,4 +190,14 @@ $(document).ready(function () {
     var page = $(this).text();
     $(".shop-total-page span:first-child").text(page);
   });
+
+  $(".sort").click(function () {
+    $(".short-list").toggle();
+  });
+
+  $(".short-list ul li").click(function () {
+    var selectedText = $(this).text();
+    $(".sort p").text(selectedText);
+    $(".short-list").hide();
+  });
 });
