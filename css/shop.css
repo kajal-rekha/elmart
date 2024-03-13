@@ -469,7 +469,7 @@ a:hover {
 }
 
 .shop-pagination {
-  margin-top: 50px;
+  margin-top: 120px;
 }
 
 .shop-pagination-wrapper {
@@ -511,7 +511,8 @@ a:hover {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
-  margin-top: 80px;
+  margin-top: 160px;
+  padding-left: 20px;
 }
 
 .shop-product-img {
@@ -661,7 +662,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 30px;
-    margin-top: 100px;
+    margin-top: 160px;
   }
 
   .details-active.shop-products-card {
@@ -676,7 +677,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 30px;
-    margin-top: 100px;
+    margin-top: 160px;
   }
 
   .details-active.shop-products-card {
@@ -691,7 +692,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
-    margin-top: 100px;
+    margin-top: 160px;
   }
 }
 
@@ -719,7 +720,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    margin-top: 100px;
+    margin-top: 160px;
   }
 
   .shop-products-area .side-wrapper {
@@ -801,7 +802,7 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
-    margin-top: 100px;
+    margin-top: 160px;
   }
 
   .details-active.shop-products-card {

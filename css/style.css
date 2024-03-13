@@ -355,6 +355,7 @@ a.active {
   display: none;
   padding: 5px 12px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .mobile-nav {
