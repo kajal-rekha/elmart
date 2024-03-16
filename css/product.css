@@ -1,0 +1,322 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Comforta";
+  src: url(../assets/fonts/comfortaa/Comfortaa-Regular.ttf);
+  font-family: "Outfit";
+  src: url(../assets/fonts/outfit/Outfit-Regular.ttf);
+  font-family: "ArchivoNarrow";
+  src: url(../assets/fonts/archivo_narrow/ArchivoNarrow-Regular.ttf);
+  font-family: "Urbanist";
+  src: url(../assets/fonts/urbanist/ArchivoNarrow-Regular.ttf);
+  font-family: "BaiJamjuree";
+  src: url(../assets/fonts/bai-jumjuree/BaiJamjuree-Regular.ttf);
+}
+Html,
+body {
+  font-family: "Comforta", sans-serif;
+  line-height: 1.8;
+  color: black;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  height: 10%;
+  background-color: orangered;
+  border-radius: 5px;
+}
+
+::selection {
+  background-color: #5bbdff;
+  color: black;
+}
+
+/******************** COMMON STYLE ****************/
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.products-details-section {
+  margin-bottom: 80px;
+}
+
+.products-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.product-images {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  padding: 10px;
+}
+
+.product-details-top {
+  margin-top: 80px;
+}
+
+.product-img {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.product-images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.product-images img:hover {
+  transform: scale(1.1);
+}
+
+.product-tab-img {
+  display: flex;
+  gap: 20px;
+}
+
+.tab-img {
+  overflow: hidden;
+  width: 100%;
+  height: 150px;
+}
+.tab-img button img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+.tab-img button img:hover {
+  transform: scale(1.1);
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.products-star {
+  display: flex;
+  gap: 5px;
+}
+
+.product-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.product-btn button {
+  background-color: orangered;
+  padding: 7px 20px;
+  color: white;
+  border-radius: 5px;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.product-btn button:hover {
+  background-color: black;
+}
+
+.product-items {
+  display: flex;
+  gap: 28px;
+  font-family: Outfit;
+}
+
+.product-items li a {
+  font-size: 17px;
+}
+.product-items li:hover a {
+  color: orangered;
+}
+.product-items .home-icon {
+  color: orangered;
+  font-size: 18px;
+}
+.product-items .product-item2::before {
+  content: ">";
+  font-size: 17px;
+  position: absolute;
+  transform: translate(-140%);
+  color: black !important;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.products-details-wrapper .products-header {
+  height: 50vh;
+  background-image: url("https://res.cloudinary.com/dh0ado2ir/image/upload/v1703240088/baner-v1_pnavee.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+.products-header-content {
+  text-align: center;
+}
+.products-details-wrapper .product-home {
+  text-align: center;
+  font-family: Outfit;
+  display: inline-block;
+}
+.products-details-wrapper .product-items {
+  display: flex;
+  gap: 28px;
+  margin: 0 auto;
+}
+
+.products-details-wrapper .product-items li a {
+  font-size: 18px;
+  color: white;
+}
+
+.product-items .product-item2 a {
+  color: #c4bbbb !important;
+}
+.product-items .product-item2::before {
+  content: ">";
+  font-size: 17px;
+  position: absolute;
+  transform: translate(-140%);
+  color: #c4bbbb !important;
+  align-items: center;
+  margin-top: 2px;
+}
+
+.products-details-wrapper .product-title {
+  font-size: 46px;
+  font-weight: 500;
+  color: white;
+  font-family: Urbanist;
+}
+
+.products-header .products-header-content {
+  margin-top: 80px;
+}
+.products-details-wrapper .product-item1 {
+  display: flex;
+  gap: 4px;
+}
+
+.products-details-wrapper .product-item1 .home-icon i {
+  color: orangered;
+}
+
+.product-description {
+  padding: 10px;
+  font-family: Urbanist;
+}
+.product-description .product-title {
+  font-size: 32px;
+  font-family: Outfit;
+}
+
+.product-description .product-price {
+  font-size: 18px;
+  font-weight: 600;
+  align-items: center;
+  font-family: ArchivoNarrow !important;
+}
+
+.product-description .products-star {
+  align-items: center;
+}
+
+.product-description .products-star .stars i {
+  font-size: 13px;
+  color: orangered;
+}
+
+.product-description .products-star p {
+  font-size: 15px;
+  align-items: center;
+}
+
+.product-details {
+  margin-top: 28px;
+}
+
+.product-description hr {
+  height: 0.2px;
+  background-color: rgb(214, 210, 210);
+  margin-top: 28px;
+}
+
+.product-details p {
+  font-size: 17px;
+}
+
+.product-description .product-btn {
+  margin-top: 20px;
+}
+
+.product-description .product-btn button {
+  font-family: BaiJamjuree;
+}
+
+@media screen and (max-width: 1100px) {
+  .products-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    width: 100%;
+  }
+
+  .tab-img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tab-img {
+    width: 100%;
+    height: 160px;
+  }
+
+  .product-img {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+  }
+}

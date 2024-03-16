@@ -200,4 +200,11 @@ $(document).ready(function () {
     $(".sort p").text(selectedText);
     $(".short-list").hide();
   });
+
+  $(".tab-img").click(function (event) {
+    event.preventDefault();
+
+    var imgSrc = $(this).find("img").attr("src");
+    $("#main-product-img").attr("src", imgSrc);
+  });
 });

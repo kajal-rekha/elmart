@@ -1,26 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product details page page</title>
-  <link rel="stylesheet" href="../assets/fontawsome/all.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product details page</title>
+    <link rel="stylesheet" href="../assets/fontawsome/all.min.css" />
     <link rel="stylesheet" href="../assets/fontawsome/fontawesome.min.css" />
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/product.css" />
+  </head>
+  <body>
     <div class="loader"></div>
 
-    
-  <div class="wrapper">
-    <p>
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum possimus illum est quo alias molestiae omnis debitis error, eligendi libero, nobis maxime velit esse porro? Obcaecati voluptatibus dolor facilis eaque!
-    </p>
-  </div>
-  <script src="../js/wow.min.js"></script>
-<script src="../js/jquery.min.js"></script>
-  <script src="../js/jquery.js"></script>
-</body>
+    <div id="navbar"></div>
+    <main>
+      <section class="products-details-section">
+        <div class="products-details-wrapper">
+          <div class="products-header">
+            <div class="products-header-content wrapper">
+              <h2 class="product-title wow fadeInDown">Product Details</h2>
+              <div class="product-home">
+                <ul class="product-items wow fadeInUp">
+                  <li class="product-item1">
+                    <span class="home-icon"
+                      ><i class="fa-solid fa-house-chimney"></i
+                    ></span>
+                    <a href="./"> Home</a>
+                  </li>
+
+                  <li class="product-item2 shop-item">
+                    <a href="./products"> Shop</a>
+                  </li>
+                  <li class="product-item2">
+                    <a href="./products"> Product</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-details-top">
+          <div class="products-details wrapper">
+            <div class="product-images">
+              <div class="top-img">
+                <div class="product-img">
+                  <a href="">
+                    <img
+                      src="../assets/images/image3.webp"
+                      alt="product-img"
+                      id="main-product-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="product-tab-img">
+                <div class="tab-img">
+                  <a href="" id="tab-img1">
+                    <img src="../assets/images/image3.webp" alt="product-img" />
+                  </a>
+                </div>
+                <div class="tab-img">
+                  <a href="" id="tab-img2">
+                    <img src="../assets/images/image8.webp" alt="product-img" />
+                  </a>
+                </div>
+                <div class="tab-img">
+                  <a href="" id="tab-img3">
+                    <img
+                      src="../assets/images/product3.webp"
+                      alt="product-img"
+                    />
+                  </a>
+                </div>
+                <div class="tab-img">
+                  <a href="" id="tab-img4">
+                    <img src="../assets/images/image7.webp" alt="product-img" />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="product-description">
+              <h3 class="product-title">New Glow-Boosting Serum!</h3>
+              <p class="product-price">Price: $250</p>
+              <div class="products-star">
+                <div class="stars">
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                </div>
+                <p>(5-current reviews)</p>
+              </div>
+              <hr />
+              <div class="product-details">
+                <p>
+                  Discover the epitome of skincare luxury with our revitalizing
+                  serum. Experience a radiant glow and youthful vibrance with
+                  every application. Unlock your skin's true potential today.
+                </p>
+              </div>
+              <div class="product-btn">
+                <button class="buy-btn">Buy Now</button>
+                <button class="add-cart-btn">
+                  Add to cart
+                  <span><i class="fa-solid fa-cart-shopping"></i></span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script>
+      //Fetch and insert navbar
+      fetch("navbar.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("navbar").innerHTML = data))
+        .catch((error) => console.error("Error fetching navbar:", error));
+
+      // Fetch and insert footer
+      fetch("footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data))
+        .catch((error) => console.error("Error fetching footer:", error));
+    </script>
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/wow.min.js"></script>
+
+    <script src="../js/app.js" defer></script>
+  </body>
 </html>
