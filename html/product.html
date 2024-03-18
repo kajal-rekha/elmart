@@ -7,6 +7,8 @@
     <title>Product details page</title>
     <link rel="stylesheet" href="../assets/fontawsome/all.min.css" />
     <link rel="stylesheet" href="../assets/fontawsome/fontawesome.min.css" />
+    <link rel="stylesheet" href="..css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="..css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="../css/responsive.css" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/product.css" />
@@ -45,7 +47,7 @@
         <div class="product-details-top">
           <div class="products-details wrapper">
             <div class="product-images">
-              <div class="top-img">
+              <div class="top-img wow fadeInUp">
                 <div class="product-img">
                   <a href="">
                     <img
@@ -56,7 +58,7 @@
                   </a>
                 </div>
               </div>
-              <div class="product-tab-img">
+              <div class="product-tab-img wow fadeInUp">
                 <div class="tab-img">
                   <a href="" id="tab-img1">
                     <img src="../assets/images/image3.webp" alt="product-img" />
@@ -83,7 +85,7 @@
               </div>
             </div>
 
-            <div class="product-description">
+            <div class="product-description wow fadeInUp">
               <h3 class="product-title">New Glow-Boosting Serum!</h3>
               <p class="product-price">Price: $250</p>
               <div class="products-star">
@@ -105,11 +107,293 @@
                 </p>
               </div>
               <div class="product-btn">
-                <button class="buy-btn">Buy Now</button>
-                <button class="add-cart-btn">
-                  Add to cart
-                  <span><i class="fa-solid fa-cart-shopping"></i></span>
-                </button>
+                <button class="buy-btn">Add to wishlist</button>
+                <button class="add-cart-btn">Add to cart</button>
+              </div>
+
+              <div class="beauty">
+                <p class="sku">Sku: <span class="sku-num">12</span></p>
+                <p class="category">Category: <a href="">Skincare</a></p>
+                <p class="tag">Tag: <a href="">Beauty</a></p>
+                <div class="product-social-link">
+                  <p class="share">Share:</p>
+                  <div class="product-social-links">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product-details-middle">
+          <div class="wrapper">
+            <div class="tab-lists">
+              <ul class="wow fadeInDown">
+                <li class="tab-list tab1 active">Description</li>
+                <li class="tab-list tab2 inactive">Additional Information</li>
+                <li class="tab-list tab3 inactive">Reviews(1)</li>
+              </ul>
+              <hr />
+            </div>
+
+            <div class="tab-description wow fadeInUp">
+              <div class="tab1-des">
+                <p>
+                  Discover the epitome of skincare luxury with our revitalizing
+                  serum. Infused with potent antioxidants and nourishing
+                  botanical extracts, our serum deeply hydrates, repairs, and
+                  rejuvenates your skin. Experience a radiant glow and youthful
+                  vibrance with every application. Unlock your skin's true
+                  potential today.
+                </p>
+              </div>
+              <div class="tab2-info">
+                <table>
+                  <tbody>
+                    <tr>
+                      <th>Weight</th>
+                      <td>0.8kg</td>
+                    </tr>
+                    <tr>
+                      <th>Classification</th>
+                      <td>6 × 6 × 25 cm</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="tab3-rev">
+                <p class="review-for">1 review for New Glow-Boosting Serum!</p>
+
+                <div class="reviewer-info">
+                  <div class="reviewer-img">
+                    <img
+                      src="https://images.pexels.com/photos/2690323/pexels-photo-2690323.jpeg?auto=compress&cs=tinysrgb&w=600"
+                      alt=""
+                    />
+                  </div>
+                  <div class="reviewer-des">
+                    <div class="stars">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+
+                    <h3 class="reviewer-name">
+                      Sarah Paraka -<span>January 14,2024</span>
+                    </h3>
+                    <p class="reviewer-degi">Beauty Expert</p>
+                  </div>
+                </div>
+                <hr />
+                <div class="add-review">
+                  <h3>Add a review</h3>
+                  <form>
+                    <p>Your email address will not be published.</p>
+                    <p>Required fields are marked *</p>
+                    <div class="rating">
+                      <p>Your Rating *</p>
+                      <span
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                        ><i class="fa-solid fa-star"></i
+                      ></span>
+                    </div>
+
+                    <div class="add-comment">
+                      <div class="inputs">
+                        <input type="text" placeholder="Full Name" />
+                        <input type="text" placeholder="Email" />
+                      </div>
+                      <textarea
+                        id="comment"
+                        class="comment"
+                        name="comment"
+                        placeholder="Review *"
+                        cols="45"
+                        rows="4"
+                        maxlength="65525"
+                        required="required"
+                      ></textarea>
+
+                      <div class="save-details">
+                        <input type="checkbox" />
+                        <p>
+                          Save my name and email, in this browser for the next
+                          time I comment.
+                        </p>
+                      </div>
+                      <button type="submit" class="submit-btn">Submit</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-details-down">
+          <div class="wrapper releted-products">
+            <h2 class="wow fadeInDown">Releted Products</h2>
+
+            <div class="product-items product-items-details">
+              <div class="item">
+                <div class="products-card">
+                  <div class="products-images products-detail-img">
+                    <div class="product-image product-detail-img">
+                      <a href="#" class="image wow fadeInUp">
+                        <img
+                          src="../assets/images/shop-img4.avif"
+                          alt="product image"
+                          class="pic-1"
+                        />
+
+                        <img
+                          src="../assets/images/shop-img5.webp"
+                          alt="product image"
+                          class="pic-2"
+                        />
+                      </a>
+
+                      <span class="discount">Sale</span>
+
+                      <div class="links">
+                        <ul>
+                          <li class="quick-view">
+                            <a href="#"
+                              ><i class="fa fa-heart" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#search-modal"
+                              ><i class="fa fa-search" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content wow fadeInUp">
+                        <span class="category"
+                          ><a href="#">Category:Skincare </a></span
+                        >
+                        <h3 class="title">
+                          <a href="#">Vibrant Eyeshadow Palette!</a>
+                        </h3>
+                        <div class="price">
+                          <span>Rs.400.00</span> Rs.350.00
+                        </div>
+                        <a href="#cart" class="cart">Add To Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="products-card">
+                  <div class="products-images products-detail-img">
+                    <div class="product-image product-detail-img">
+                      <a href="#" class="image wow fadeInUp">
+                        <img
+                          src="../assets/images/shop-img14.webp"
+                          alt="product image"
+                          class="pic-1"
+                        />
+
+                        <img
+                          src="../assets/images/shop-img15.png"
+                          alt="product image"
+                          class="pic-2"
+                        />
+                      </a>
+
+                      <span class="discount">New</span>
+
+                      <div class="links">
+                        <ul>
+                          <li class="quick-view">
+                            <a href="#"
+                              ><i class="fa fa-heart" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#search-modal"
+                              ><i class="fa fa-search" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content wow fadeInUp">
+                        <span class="category"
+                          ><a href="#">Category:Makeup </a></span
+                        >
+                        <h3 class="title">
+                          <a href="#">Silk-infused Body Lotion!</a>
+                        </h3>
+                        <div class="price"><span>Rs.350.00</span>Rs.280.00</div>
+                        <a href="#cart" class="cart">Add To Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="item">
+                <div class="products-card">
+                  <div class="products-images products-detail-img">
+                    <div class="product-image product-detail-img">
+                      <a href="#" class="image wow fadeInUp">
+                        <img
+                          src="../assets/images/shop-img25.png"
+                          alt="product image"
+                          class="pic-1"
+                        />
+
+                        <img
+                          src="../assets/images/shop-img22.png"
+                          alt="product image"
+                          class="pic-2"
+                        />
+                      </a>
+
+                      <span class="discount">Sale</span>
+
+                      <div class="links">
+                        <ul>
+                          <li class="quick-view">
+                            <a href="#"
+                              ><i class="fa fa-heart" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                          <li>
+                            <a href="#search-modal"
+                              ><i class="fa fa-search" aria-hidden="true"></i
+                            ></a>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="content wow fadeInUp">
+                        <span class="category"
+                          ><a href="#">Category: Hair Oil</a></span
+                        >
+                        <h3 class="title">
+                          <a href="#">Range of Hair Oils!</a>
+                        </h3>
+                        <div class="price"><span>Rs.6.00</span>Rs.450.00</div>
+                        <a href="#cart" class="cart">Add To Cart</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -135,7 +419,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.js"></script>
     <script src="../js/wow.min.js"></script>
-
+    <script src="../js/owl.carousel.min.js"></script>
     <script src="../js/app.js" defer></script>
   </body>
 </html>

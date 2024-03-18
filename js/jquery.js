@@ -207,4 +207,19 @@ $(document).ready(function () {
     var imgSrc = $(this).find("img").attr("src");
     $("#main-product-img").attr("src", imgSrc);
   });
+
+  $(".tab1").addClass("active");
+  $(".tab1-des").addClass("active");
+
+  $(".tab-list").click(function () {
+    var tabIndex = $(this).index() + 1;
+
+    $(".tab-description > div").removeClass("active").addClass("inactive");
+    $(".tab-list").removeClass("active").addClass("inactive");
+
+    $(".tab-description > div:nth-child(" + tabIndex + ")")
+      .removeClass("inactive")
+      .addClass("active");
+    $(this).removeClass("inactive").addClass("active");
+  });
 });
