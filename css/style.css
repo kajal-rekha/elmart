@@ -1622,3 +1622,15 @@ footer {
     transform: rotate(1turn);
   }
 }
+
+#nav {
+  z-index: 6000;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the header stays on top of other content */
+  transform: translateY(0); /* Reset transform */
+}

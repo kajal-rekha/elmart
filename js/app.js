@@ -97,11 +97,19 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
+const nav = document.getElementById("nav");
+const navbarHeight = nav.getBoundingClientRect().height;
+const threshold = 200;
+let isSticky = false;
 
+function handleScroll() {
+  if (window.scrollY > threshold && !isSticky) {
+    nav.classList.add("sticky");
+    isSticky = true;
+  } else if (window.scrollY <= threshold && isSticky) {
+    nav.classList.remove("sticky");
+    isSticky = false;
+  }
+}
 
-
-
-
-
-
-
+window.addEventListener("scroll", handleScroll);
