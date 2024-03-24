@@ -568,10 +568,6 @@ a:hover {
   color: white !important;
 }
 
-/* .shop-contents a:hover{
-  color: white;
-} */
-
 .shop-product-img:hover .shop-contents {
   display: block;
   bottom: 0px;
@@ -714,7 +710,6 @@ a:hover {
 }
 
 @media screen and (min-width: 1400px) {
-  
   .shop-header .shop-header-content {
     margin-top: 120px;
   }
@@ -1353,7 +1348,6 @@ a:hover {
     width: 100%;
   }
 
-  
   .product-header-right .sort p {
     margin: 0 auto;
     font-size: 8px;

@@ -222,4 +222,17 @@ $(document).ready(function () {
       .addClass("active");
     $(this).removeClass("inactive").addClass("active");
   });
+
+  $(".product-img a").click(function (e) {
+    e.preventDefault();
+    var imgSrc = $(this).find("img").attr("src");
+    $("#products-popup .popup-content").html(
+      '<img src="' + imgSrc + '" alt="popup-image">'
+    );
+    $("#products-popup").show();
+  });
+
+  $(".cross-popup").click(function () {
+    $("#products-popup").hide();
+  });
 });
