@@ -29,7 +29,6 @@ body {
   word-spacing: 3px;
   scroll-behavior: smooth;
   font-size: 16px;
-  overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -238,6 +237,9 @@ a:hover {
   color: orangered;
 }
 
+.categ {
+  font-size: 12px;
+}
 .side-wrapper .filter-price-heading {
   display: flex;
   justify-content: space-between;
@@ -303,12 +305,52 @@ a:hover {
   -webkit-appearance: none;
 }
 
-.price-ranges .range {
-  margin-top: 16px;
+.price-ranges {
+  height: 5px;
+  background-color: #c4bbbb;
+  position: relative;
+}
+.price-ranges .price-progress {
+  height: 5px;
+  background-color: orangered;
+  border-radius: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
-.price-ranges .range input {
+.price-ranges .ranges {
+  position: relative;
+  margin-top: 38px;
+}
+.price-ranges .ranges input {
   width: 100%;
+  position: absolute;
+  height: 5px;
+  background-color: orangered;
+  appearance: none;
+  pointer-events: none;
+  cursor: pointer;
+  background: none;
+  -moz-appearance: textfield;
+}
+
+.price-ranges .ranges input::-webkit-slider-thumb {
+  width: 15px;
+  height: 15px;
+  background: orangered;
+  border-radius: 100%;
+  -webkit-appearance: none;
+  pointer-events: auto;
+}
+
+.price-ranges .ranges input::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: orangered;
+  border-radius: 100%;
+  -moz-appearance: none;
+  pointer-events: auto;
 }
 
 .exclusive-products {
@@ -576,6 +618,10 @@ a:hover {
 .shop-contents h3 a {
   font-size: 16px;
   color: white;
+}
+
+.shop-contents h3 {
+  margin-bottom: 5px;
 }
 
 .shop-contents .shop-star i {

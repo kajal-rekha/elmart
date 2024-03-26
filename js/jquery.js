@@ -154,11 +154,6 @@ $(document).ready(function () {
     $(".quick-view-modal").fadeOut();
   });
 
-  $(".min-price-range").on("input", function () {
-    var val = parseInt($(this).val());
-    $(".min-number").val(val);
-  });
-
   $(".side-bar-close-icon").click(function () {
     $(".side-wrapper").addClass("hide");
     $(".sidebar-show").css("display", "block");

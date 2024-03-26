@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../css/shop.css" />
   </head>
   <body>
-    <div class="loader"></div>
+    <!-- <div class="loader"></div> -->
 
     <main>
       <div id="navbar"></div>
@@ -91,34 +91,43 @@
                       name="number"
                       value="0"
                       min="0"
-                      max="5000"
-                      class="min-number"
+                      max="1000"
+                      class="minNumber"
                     />
                   </div>
                   <div class="price-minus">–</div>
-
                   <div class="price-input">
                     <span>$</span>
                     <input
                       type="number"
                       name="number"
-                      value="5000"
+                      value="1000"
                       min="0"
-                      max="5000"
-                      class="max-number"
+                      max="1000"
+                      class="maxNumber"
                     />
                   </div>
                 </div>
 
                 <div class="price-ranges wow slideInLeft">
-                  <div class="range">
+                  <div class="price-progress"></div>
+
+                  <div class="ranges">
                     <input
                       type="range"
                       name="range"
                       min="0"
-                      max="5000"
+                      max="1000"
                       value="0"
-                      class="min-price-range"
+                      class="min_price_range"
+                    />
+                    <input
+                      type="range"
+                      name="range"
+                      min="0"
+                      max="1000"
+                      value="1000"
+                      class="max_price_range"
                     />
                   </div>
                 </div>
@@ -1057,6 +1066,7 @@
     <script src="../js/jquery.min.js"></script>
     <script src="../js/jquery.js"></script>
     <script src="../js/wow.min.js"></script>
+    <script src="../js/shop.js"></script>
     <script src="../js/app.js" defer></script>
   </body>
 </html>

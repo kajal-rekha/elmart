@@ -194,7 +194,7 @@
     transition: 0.5s;
   }
 
-  .nav-items .toggle-nav:hover{
+  .nav-items .toggle-nav:hover {
     background-color: black;
   }
   header .mobile-nav {
@@ -211,10 +211,13 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.5s ease;
     transform: translateX(-100%);
+    opacity: 0;
   }
 
   .mobile-nav.open {
     transform: translateX(0);
+    visibility: visible;
+    opacity: 1;
   }
 
   header .mobile-nav .mobile-menu {
@@ -715,7 +718,6 @@
     margin-left: 10px;
   }
 
-  
   .footer .top-footer .logo a {
     font-size: 24px;
   }
@@ -1181,7 +1183,6 @@
   }
   .swiper .swiper-content .hero-btn {
     margin-left: 27%;
-   
   }
 
   header .search-modal .src-form {
