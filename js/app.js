@@ -1,16 +1,13 @@
 new WOW().init();
-
 //******************** */ swiper  **************************//
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   spaceBetween: 0,
   loop: true,
-
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-
   breakpoints: {
     768: {
       slidesPerView: 2,
@@ -18,7 +15,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-
 //************** */ slick-slider **************** //
 $(".slider").slick({
   dots: true,
@@ -68,7 +64,6 @@ $(".slider").slick({
     },
   ],
 });
-
 $(".owl-carousel").owlCarousel({
   items: 3,
   dots: true,
@@ -97,19 +92,25 @@ $(".owl-carousel").owlCarousel({
   },
 });
 
-const nav = document.getElementById("nav");
-const navbarHeight = nav.getBoundingClientRect().height;
-const threshold = 200;
-let isSticky = false;
+document.addEventListener("DOMContentLoaded", function () {
+  var testimonialSlider = new Swiper(".testimonial-slider", {
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 20,
+    Infinity: true,
+    autoplay: true,
 
-function handleScroll() {
-  if (window.scrollY > threshold && !isSticky) {
-    nav.classList.add("sticky");
-    isSticky = true;
-  } else if (window.scrollY <= threshold && isSticky) {
-    nav.classList.remove("sticky");
-    isSticky = false;
-  }
-}
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+    },
 
-window.addEventListener("scroll", handleScroll);
+    // Pagination dots
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+});

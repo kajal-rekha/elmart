@@ -16,11 +16,13 @@ $(document).ready(function () {
   // ********* cart open modal  *********//
   $(".cart-icon ").on("click", function () {
     $("#cartModal").toggleClass("show");
+    document.body.style.overflow = "hidden";
   });
 
   // ********* cart close modal  *********//
   $(".cross-btn2").on("click", function () {
     $("#cartModal").removeClass("show");
+    document.body.style.overflow = "auto";
   });
 
   // ********* search open modal  *********//
@@ -40,10 +42,12 @@ $(document).ready(function () {
   // ********* nav toggle open   *********//
   $(".toggle-nav").on("click", function () {
     $(".mobile-nav").toggleClass("open");
+    document.body.style.overflow = "hidden";
   });
 
   $(".nav-cross").on("click", function () {
     $(".mobile-nav").removeClass("open");
+    document.body.style.overflow = "auto";
   });
 
   $(".mobile-dropdown").click(function (e) {
@@ -229,5 +233,85 @@ $(document).ready(function () {
 
   $(".cross-popup").click(function () {
     $("#products-popup").hide();
+  });
+
+  $(document).ready(function () {
+    // shop page
+    const price_ranges = $(".ranges input");
+    const progress_bar = $(".price-progress");
+    const minNumberInput = $(".minNumber");
+    const maxNumberInput = $(".maxNumber");
+    const minRangeInput = $(".min_price_range");
+    const maxRangeInput = $(".max_price_range");
+    const priceProgress = $(".price-progress");
+
+    price_ranges.each(function () {
+      $(this).on("input", function (e) {
+        let minValue = parseInt(price_ranges.eq(0).val());
+        let maxValue = parseInt(price_ranges.eq(1).val());
+        let price_gap = 100;
+
+        if (maxValue - minValue < price_gap) {
+          if ($(e.target).hasClass("min_price_range")) {
+            price_ranges.eq(0).val(maxValue - price_gap);
+          } else {
+            price_ranges.eq(1).val(minValue + price_gap);
+          }
+        } else {
+          progress_bar.css(
+            "left",
+            (minValue / $(this).prop("max")) * 100 + "%"
+          );
+          progress_bar.css(
+            "right",
+            100 - (maxValue / $(this).prop("max")) * 100 + "%"
+          );
+        }
+      });
+    });
+
+    // Function to synchronize range inputs with number inputs
+    function syncRangeInputs() {
+      minRangeInput.val(minNumberInput.val());
+      maxRangeInput.val(maxNumberInput.val());
+    }
+
+    // Function to synchronize number inputs with range inputs
+    function syncNumberInputs() {
+      minNumberInput.val(minRangeInput.val());
+      maxNumberInput.val(maxRangeInput.val());
+    }
+
+    // Add event listeners for number inputs
+    minNumberInput.on("input", function () {
+      syncRangeInputs();
+    });
+
+    maxNumberInput.on("input", function () {
+      syncRangeInputs();
+    });
+
+    // Add event listeners for range inputs
+    minRangeInput.on("input", function () {
+      syncNumberInputs();
+      updatePriceProgress();
+    });
+
+    maxRangeInput.on("input", function () {
+      syncNumberInputs();
+      updatePriceProgress();
+    });
+
+    // Function to update price progress bar
+    function updatePriceProgress() {
+      const range = maxRangeInput.prop("max") - minRangeInput.prop("min");
+      const value = maxRangeInput.val() - minRangeInput.prop("min");
+      const percentage = (value / range) * 100;
+      // priceProgress.css("width", percentage + "%");
+    }
+
+    // Initial synchronization
+    syncRangeInputs();
+    updatePriceProgress();
   });
 });
